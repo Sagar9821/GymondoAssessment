@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2E618C2B5A9609005ADE1F /* TestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2E618B2B5A9609005ADE1F /* TestFactory.swift */; };
 		6E4D827C2B5A5A9A00BB063D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D827B2B5A5A9A00BB063D /* AppDelegate.swift */; };
 		6E4D827E2B5A5A9A00BB063D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D827D2B5A5A9A00BB063D /* SceneDelegate.swift */; };
 		6E4D82802B5A5A9A00BB063D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D827F2B5A5A9A00BB063D /* ViewController.swift */; };
@@ -20,6 +21,14 @@
 		6E4D830A2B5A5EE800BB063D /* Gymondo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4D82FA2B5A5EE800BB063D /* Gymondo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4D830D2B5A5EE800BB063D /* Gymondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4D82F82B5A5EE800BB063D /* Gymondo.framework */; };
 		6E4D830E2B5A5EE800BB063D /* Gymondo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4D82F82B5A5EE800BB063D /* Gymondo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E4D831D2B5A619F00BB063D /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D831C2B5A619F00BB063D /* Exercises.swift */; };
+		6E4D831F2B5A670100BB063D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D831E2B5A670100BB063D /* WebService.swift */; };
+		6E4D83212B5A675000BB063D /* WebServiceRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83202B5A675000BB063D /* WebServiceRequestError.swift */; };
+		6E4D83242B5A68AC00BB063D /* MockWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83232B5A68AC00BB063D /* MockWebService.swift */; };
+		6E4D83272B5A6C1400BB063D /* WebServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83262B5A6C1400BB063D /* WebServiceSpec.swift */; };
+		6E4D83292B5A713F00BB063D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83282B5A713F00BB063D /* APIRouter.swift */; };
+		6E4D832B2B5A738600BB063D /* RouterEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */; };
+		6E4D832D2B5A75EA00BB063D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832C2B5A75EA00BB063D /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E2E618B2B5A9609005ADE1F /* TestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactory.swift; sourceTree = "<group>"; };
 		6E4D82782B5A5A9A00BB063D /* GymondoAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4D827B2B5A5A9A00BB063D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E4D827D2B5A5A9A00BB063D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +93,14 @@
 		6E4D82FB2B5A5EE800BB063D /* Gymondo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Gymondo.docc; sourceTree = "<group>"; };
 		6E4D83012B5A5EE800BB063D /* GymondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4D83082B5A5EE800BB063D /* GymondoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoTests.swift; sourceTree = "<group>"; };
+		6E4D831C2B5A619F00BB063D /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		6E4D831E2B5A670100BB063D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6E4D83202B5A675000BB063D /* WebServiceRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceRequestError.swift; sourceTree = "<group>"; };
+		6E4D83232B5A68AC00BB063D /* MockWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebService.swift; sourceTree = "<group>"; };
+		6E4D83262B5A6C1400BB063D /* WebServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceSpec.swift; sourceTree = "<group>"; };
+		6E4D83282B5A713F00BB063D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterEndpoints.swift; sourceTree = "<group>"; };
+		6E4D832C2B5A75EA00BB063D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +184,9 @@
 		6E4D82F92B5A5EE800BB063D /* Gymondo */ = {
 			isa = PBXGroup;
 			children = (
+				6E4D831B2B5A618400BB063D /* Networking */,
+				6E4D831A2B5A617700BB063D /* Services */,
+				6E4D83192B5A616E00BB063D /* Models */,
 				6E4D82FA2B5A5EE800BB063D /* Gymondo.h */,
 				6E4D82FB2B5A5EE800BB063D /* Gymondo.docc */,
 			);
@@ -175,9 +196,55 @@
 		6E4D83072B5A5EE800BB063D /* GymondoTests */ = {
 			isa = PBXGroup;
 			children = (
+				6E4D83252B5A6BE500BB063D /* Networking */,
+				6E4D83222B5A687B00BB063D /* Test Helper */,
 				6E4D83082B5A5EE800BB063D /* GymondoTests.swift */,
 			);
 			path = GymondoTests;
+			sourceTree = "<group>";
+		};
+		6E4D83192B5A616E00BB063D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E4D831C2B5A619F00BB063D /* Exercises.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E4D831A2B5A617700BB063D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6E4D831B2B5A618400BB063D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6E4D831E2B5A670100BB063D /* WebService.swift */,
+				6E4D83202B5A675000BB063D /* WebServiceRequestError.swift */,
+				6E4D83282B5A713F00BB063D /* APIRouter.swift */,
+				6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */,
+				6E4D832C2B5A75EA00BB063D /* Environment.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6E4D83222B5A687B00BB063D /* Test Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6E4D83232B5A68AC00BB063D /* MockWebService.swift */,
+				6E2E618B2B5A9609005ADE1F /* TestFactory.swift */,
+			);
+			path = "Test Helper";
+			sourceTree = "<group>";
+		};
+		6E4D83252B5A6BE500BB063D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6E4D83262B5A6C1400BB063D /* WebServiceSpec.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,7 +439,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4D831F2B5A670100BB063D /* WebService.swift in Sources */,
+				6E4D83292B5A713F00BB063D /* APIRouter.swift in Sources */,
+				6E4D83212B5A675000BB063D /* WebServiceRequestError.swift in Sources */,
+				6E4D832D2B5A75EA00BB063D /* Environment.swift in Sources */,
 				6E4D82FC2B5A5EE800BB063D /* Gymondo.docc in Sources */,
+				6E4D831D2B5A619F00BB063D /* Exercises.swift in Sources */,
+				6E4D832B2B5A738600BB063D /* RouterEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +453,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2E618C2B5A9609005ADE1F /* TestFactory.swift in Sources */,
+				6E4D83242B5A68AC00BB063D /* MockWebService.swift in Sources */,
+				6E4D83272B5A6C1400BB063D /* WebServiceSpec.swift in Sources */,
 				6E4D83092B5A5EE800BB063D /* GymondoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +627,7 @@
 		6E4D828D2B5A5A9C00BB063D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +655,7 @@
 		6E4D828E2B5A5A9C00BB063D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -703,6 +781,7 @@
 		6E4D83142B5A5EE900BB063D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -719,6 +798,7 @@
 		6E4D83152B5A5EE900BB063D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

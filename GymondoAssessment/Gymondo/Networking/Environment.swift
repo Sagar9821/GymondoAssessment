@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class Environment {
+    
+    class var BASEURL: String {
+        return "https://wger.de/api/v2"
+    }
+}

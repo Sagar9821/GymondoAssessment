@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+public enum HTTPMethod : String {
+    case get = "GET"
+    case post = "POST"
+    case delete = "DELETE"
+    case put = "PUT"
+}
+
+public protocol APIRouter {
+    var curl: String { get }
+    var method: HTTPMethod { get }    
+}
+
+
