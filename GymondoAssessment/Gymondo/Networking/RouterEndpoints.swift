@@ -13,7 +13,7 @@ public enum Router: APIRouter {
     
     func asURLRequest() -> URLRequest? {
         guard var urlComponents = URLComponents(string: Environment.BASEURL) else {  return nil }
-        urlComponents.path = self.curl
+        urlComponents.path = "\(urlComponents.path)\(curl)"
         guard let finalURL = urlComponents.url else {  return nil }
         var request = URLRequest(url: finalURL)
         request.httpMethod = method.rawValue

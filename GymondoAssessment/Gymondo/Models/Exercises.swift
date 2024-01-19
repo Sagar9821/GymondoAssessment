@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - ExercisesResponse
 public struct ExercisesResponse: Codable {
-    let results: [Exercise]?
+    public let results: [Exercise]?
     public init(results: [Exercise]?) {
         self.results = results
     }

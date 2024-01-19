@@ -12,9 +12,10 @@ public enum WebServiceRequestError: LocalizedError, Equatable {
     case invalidRequest
     case badRequest
     case unauthorized
+    case forbidden
     case notFound
     case error(_ code: Int)
-    case serverError
+    case serverError    
     case decodingError( _ description: String)
     case timeOut
     case unknownError
