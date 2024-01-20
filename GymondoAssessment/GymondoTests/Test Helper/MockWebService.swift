@@ -10,13 +10,14 @@ import Combine
 @testable import Gymondo
 
 class MockWebService: WebServiceType {
+   
     
     private(set) var startFetching = false
     private(set) var catchRequests: [URLRequest] = []
 
     
     var response: AnyPublisher<Data, WebServiceRequestError>?
-    func fetch<T: Codable>(router: Router) -> AnyPublisher<T, WebServiceRequestError>{
+    func fetch<T:Codable>(type: T.Type, router: Router)  -> AnyPublisher<T, WebServiceRequestError>{
       
         guard let request = router.asURLRequest() else {
             let errorPublisher = Fail<T, WebServiceRequestError>(error: .invalidRequest)
@@ -33,7 +34,7 @@ class MockWebService: WebServiceType {
                 }
                 .flatMap { data in
                     Just(data)
-                        .decode(type: T.self, decoder: JSONDecoder())
+                        .decode(type: type.self, decoder: JSONDecoder())
                         .mapError { error in
                             .decodingError(error.localizedDescription)
                         }

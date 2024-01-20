@@ -20,7 +20,7 @@ struct TestFactory {
         return Exercise(id: id, uuid: uuid, name: name, exerciseBase: exerciseBase, description: description, images: images, created: created, variations: variations)
     }
     
-    static func exerciseResponse(exercies: [Exercise]) -> Data?{
+    static func exerciseResponse(exercies: [Exercise]?) -> Data?{
         let responseData = ExercisesResponse(results: exercies)
         if let data = try? JSONEncoder().encode(responseData) {
             return data

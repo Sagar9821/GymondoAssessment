@@ -19,7 +19,7 @@ final class WebServiceSpec: XCTestCase {
         let request = Router.getExercises.asURLRequest()
         
         // When
-        let cancellable = sut.fetch(router: .getExercises)
+        let cancellable = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
             .sink(receiveCompletion: { _ in }, receiveValue: { (_: ExercisesResponse) in })
 
         // Then
@@ -38,7 +38,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -65,7 +65,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -110,7 +110,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: ExercisesResponse?
 
         // When
-        _ = sut.fetch(router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
                 receivedItems = items
             })
@@ -127,7 +127,7 @@ final class WebServiceSpec: XCTestCase {
     func test_successWithEmptyList() {
         // Given
         let sut = getWebService()
-        guard let responseData = TestFactory.exerciseResponse(exercies: []) else { return }
+        guard let responseData = TestFactory.exerciseResponse(exercies: nil) else { return }
         sut.response = Just(responseData)
             .setFailureType(to: WebServiceRequestError.self)
             .eraseToAnyPublisher()
@@ -135,9 +135,9 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: [Exercise]?
 
         // When
-        _ = sut.fetch(router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
-                receivedItems = items
+                receivedItems = items.results
             })
 
         // Then
