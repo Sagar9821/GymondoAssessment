@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ExerciseListViewController" id="Y6W-OH-hqX" customClass="ExerciseListViewController" customModule="GymondoAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SVP-uG-Xuz">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PoB-x2-yGK">
+                                <rect key="frame" x="178" y="420" width="37" height="37"/>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="viewBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SVP-uG-Xuz" secondAttribute="bottom" id="Hi0-uV-f7a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SVP-uG-Xuz" secondAttribute="trailing" id="WEB-rF-AUN"/>
+                            <constraint firstItem="PoB-x2-yGK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YHw-9V-pY6"/>
+                            <constraint firstItem="PoB-x2-yGK" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="dlf-4J-62g"/>
+                            <constraint firstItem="SVP-uG-Xuz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iJE-ah-mH7"/>
+                            <constraint firstItem="SVP-uG-Xuz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="uvA-r2-Bba"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityLoader" destination="PoB-x2-yGK" id="dvB-J7-AFb"/>
+                        <outlet property="tableViewExercises" destination="SVP-uG-Xuz" id="SfV-gN-9cH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="viewBackground">
+            <color red="0.96862745289999996" green="0.9529411793" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
