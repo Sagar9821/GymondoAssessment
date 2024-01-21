@@ -97,4 +97,8 @@ extension ExerciseListViewController: UITableViewDelegate {
             exerciseCell.loadImage()
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let exercise = viewModel.arrayExercise[indexPath.row]
+        navigator.navigate(to: .exerciseDetails(exercise))
+    }
 }
