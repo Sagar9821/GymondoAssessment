@@ -10,6 +10,7 @@ import Foundation
 public enum Router: APIRouter {
     
     case getExercises
+    case getExerciseInfo(id: Int)
     
     func asURLRequest() -> URLRequest? {
         guard var urlComponents = URLComponents(string: Environment.BASEURL) else {  return nil }
@@ -24,7 +25,7 @@ public enum Router: APIRouter {
 extension Router {
     public var method: HTTPMethod {
         switch self {
-        case .getExercises:
+        case .getExercises,.getExerciseInfo:
             return .get
         }
     }
@@ -33,6 +34,8 @@ extension Router {
         switch self {
         case .getExercises:
             return "/exerciseinfo"
+        case .getExerciseInfo(id: let id):
+            return "/exerciseinfo/\(id)"
         }
     }
     

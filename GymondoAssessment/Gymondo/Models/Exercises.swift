@@ -44,7 +44,7 @@ public struct ExerciseImage: Codable, Hashable {
 }
 
 // MARK: - Exercise
-public struct Exercise: Codable, Equatable {
+public struct Exercise: Codable, Equatable,Identifiable, Hashable{
     
     public let id: Int?
     public let uuid, name: String?
