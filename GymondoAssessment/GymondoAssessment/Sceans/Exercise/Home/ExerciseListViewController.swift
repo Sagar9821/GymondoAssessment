@@ -38,6 +38,7 @@ class ExerciseListViewController: UIViewController {
     private func prepareView() {
         title = "Exercises"
         tableViewExercises.dataSource = self
+        tableViewExercises.delegate = self
         viewModel.fetchExercise()
     }
 
@@ -49,6 +50,7 @@ class ExerciseListViewController: UIViewController {
                 self?.activityLoader.startAnimating()
             case .failure(let message):
                 self?.activityLoader.stopAnimating()
+                self?.showAlert(title: "Error", message: message)
             case .none,.success:
                 self?.activityLoader.stopAnimating()
             }
@@ -86,5 +88,13 @@ extension ExerciseListViewController : UITableViewDataSource {
         guard let cell = tableView.getCell(ExerciseCell.self) else { return UITableViewCell() }
         cell.exercise = viewModel.arrayExercise[indexPath.row]
         return cell
+    }
+}
+//MARK: TableView Delegate
+extension ExerciseListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let exerciseCell = cell as? ExerciseCell {
+            exerciseCell.loadImage()
+        }
     }
 }
