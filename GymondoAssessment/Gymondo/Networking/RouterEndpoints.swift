@@ -9,12 +9,20 @@ import Foundation
 
 public enum Router: APIRouter {
     
-    case getExercisebaseinfo
+    case getExercisebaseinfo(limit: Int,offset: Int)
     case getExerciseInfo(id: Int)
     
     func asURLRequest() -> URLRequest? {
         guard var urlComponents = URLComponents(string: Environment.BASEURL) else {  return nil }
         urlComponents.path = "\(urlComponents.path)\(curl)"
+        
+        if let queryParams = queryParams {
+            var params: [URLQueryItem] = []
+            for(key,value) in queryParams {
+                params.append(URLQueryItem(name: key, value: value))
+            }
+            urlComponents.queryItems = params
+        }
         guard let finalURL = urlComponents.url else {  return nil }
         var request = URLRequest(url: finalURL)
         request.httpMethod = method.rawValue
@@ -39,4 +47,15 @@ extension Router {
         }
     }
     
+}
+
+extension Router {
+    public var queryParams: [String : String]? {
+        switch self {
+        case .getExercisebaseinfo(let limit, let offset):
+            return ["limit":"\(limit)","offset":"\(offset)"]
+        case .getExerciseInfo:
+            return nil
+        }
+    }
 }

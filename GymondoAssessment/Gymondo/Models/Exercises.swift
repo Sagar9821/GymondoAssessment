@@ -60,7 +60,6 @@ public struct ExercisesDetails: Codable {
         return images?.first(where: {$0.isMain ?? false})
     }
     
-    
 }
 
 
@@ -102,9 +101,8 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
     public let language: Language?
     public let images: [ExerciseImage]?
     public let created: String?
-    public let variations: [Int]?
 
-    public init(id: Int?, uuid: String?, name: String?, exerciseBase: Int?, description: String?,language: Language?, images: [ExerciseImage]?, created: String?, variations: [Int]?) {
+    public init(id: Int?, uuid: String?, name: String?, exerciseBase: Int?, description: String?,language: Language?, images: [ExerciseImage]?, created: String?) {
         self.id = id
         self.uuid = uuid
         self.name = name
@@ -113,14 +111,12 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
         self.language = language
         self.images = images
         self.created = created
-        self.variations = variations
     }
 
     enum CodingKeys: String, CodingKey {
         case id, uuid, name
         case exerciseBase = "exercise_base"
         case description, images, created, language
-        case variations
     }
 
     public static func == (lhs: Exercise, rhs: Exercise) -> Bool {
@@ -137,7 +133,6 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
         language = try container.decodeIfPresent(Language.self, forKey: .language)
         images = try container.decodeIfPresent([ExerciseImage].self, forKey: .images)
         created = try container.decodeIfPresent(String.self, forKey: .created)
-        variations = try container.decodeIfPresent([Int].self, forKey: .variations)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -150,7 +145,6 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
         try container.encode(language?.rawValue ?? 0, forKey: .language)
         try container.encode(images, forKey: .images)
         try container.encode(created, forKey: .created)
-        try container.encode(variations, forKey: .variations)
     }
 }
 

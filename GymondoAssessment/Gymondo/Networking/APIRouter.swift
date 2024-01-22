@@ -17,6 +17,7 @@ public enum HTTPMethod : String {
 public protocol APIRouter {
     var curl: String { get }
     var method: HTTPMethod { get }    
+    var queryParams: [String:String]? { get }
 }
 
 

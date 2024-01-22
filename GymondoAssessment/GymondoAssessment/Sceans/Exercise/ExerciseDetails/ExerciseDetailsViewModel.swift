@@ -37,7 +37,7 @@ class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
                     break
                 }
             } receiveValue: { exercise in
-                self.variations.append(exercise)
+                self.variations.append(contentsOf: exercise.exercises ?? [])
             }.store(in: &cancellable)
         }
     }

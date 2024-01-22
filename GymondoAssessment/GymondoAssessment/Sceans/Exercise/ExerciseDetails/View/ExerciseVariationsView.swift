@@ -40,5 +40,5 @@ struct ExerciseVariationsView: View {
 }
 
 #Preview {
-    ExerciseVariationsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 1, description: "", language: .english, images: nil, created: "", variations: [])], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
+    ExerciseVariationsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 1, description: "", language: .english, images: nil, created: "")], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
 }

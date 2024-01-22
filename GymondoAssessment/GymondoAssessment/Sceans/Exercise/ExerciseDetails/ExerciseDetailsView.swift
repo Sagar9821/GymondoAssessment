@@ -23,7 +23,7 @@ struct ExerciseDetailsView: View {
             Color.viewBackground.ignoresSafeArea()
             ScrollView {
                 ExerciseAsyncImagesView(exerciseImages: viewModel.exercises.images)
-//                ExerciseVariationsView(variations: viewModel.variations)
+                ExerciseVariationsView(viewModel: viewModel, navigator: navigator)
             }.task {
                 viewModel.getExerciseVariations()
             }.navigationTitle(viewModel.exercises.exercises.unsafelyUnwrapped.first.unsafelyUnwrapped.name ?? "")
@@ -32,5 +32,5 @@ struct ExerciseDetailsView: View {
 }
 
 #Preview {
-    ExerciseDetailsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 3, description: "", language: .english, images: nil, created: "", variations: [])], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
+    ExerciseDetailsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 3, description: "", language: .english, images: nil, created: "")], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
 }
