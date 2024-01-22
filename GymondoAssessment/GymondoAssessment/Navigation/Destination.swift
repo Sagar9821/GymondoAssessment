@@ -9,5 +9,9 @@ import Foundation
 import Gymondo
 
 enum Destinations: Equatable {
-    case exerciseDetails(Exercise)
+    static func == (lhs: Destinations, rhs: Destinations) -> Bool {
+        return true
+    }
+    
+    case exerciseDetails(Exercise,ExerciseService)
 }

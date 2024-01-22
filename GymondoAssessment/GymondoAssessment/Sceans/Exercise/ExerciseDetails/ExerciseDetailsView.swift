@@ -16,6 +16,7 @@ struct ExerciseDetailsView: View {
     var body: some View {
         ScrollView {
             Text(viewModel.exercises.name ?? "")
+            
             ForEach(viewModel.variations, id: \.self) { variations in
                 Text(variations.name ?? "")
             }

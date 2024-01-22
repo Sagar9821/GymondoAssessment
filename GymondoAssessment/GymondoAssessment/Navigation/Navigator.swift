@@ -21,7 +21,7 @@ protocol NavigatorType {
 class Navigator: NavigatorType {
     
     private let navigationController: UINavigationController
-    let exerciseService: ExerciseService = ExerciseService()
+    
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -31,7 +31,7 @@ class Navigator: NavigatorType {
         switch entrypoint {
         case .exerciseList:
             let storyboard = GymondoStoryboard.exercise
-            
+            let exerciseService: ExerciseService = ExerciseService()
             let viewModel = ExerciseListViewModel(excerciseServices: exerciseService)
             let viewController = storyboard.instantiateViewController(identifier: ExerciseListViewController.storyboardID) { coder in
                 return ExerciseListViewController(coder: coder, navigator: self, viewModel: viewModel)
@@ -42,7 +42,7 @@ class Navigator: NavigatorType {
     
     func navigate(to destination: Destinations) {
         switch destination {
-        case .exerciseDetails(let exercise):
+        case .exerciseDetails(let exercise,let exerciseService):
             let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
             let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel)
             let hostingVc = UIHostingController(rootView: exerciseDetailsView)
