@@ -16,7 +16,7 @@ public struct ExercisesResponse: Codable {
 }
 
 // MARK: - ExerciseImage
-public struct ExerciseImage: Codable, Hashable {
+public struct ExerciseImage: Codable, Hashable,Identifiable {
     
     public let id: Int?
     public let uuid: String?

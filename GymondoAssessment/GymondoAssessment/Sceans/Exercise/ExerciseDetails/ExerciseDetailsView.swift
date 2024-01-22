@@ -14,14 +14,22 @@ struct ExerciseDetailsView: View {
 
     
     var body: some View {
-        ScrollView {
-            Text(viewModel.exercises.name ?? "")
-            
-            ForEach(viewModel.variations, id: \.self) { variations in
-                Text(variations.name ?? "")
-            }
-        }.task {
-            viewModel.getExerciseVariations()
+        ZStack {
+            Color.viewBackground.ignoresSafeArea()
+            ScrollView {
+                ScrollView(.horizontal) {
+                    VStack {
+                        HStack {
+                            ForEach(viewModel.variations, id: \.self) { variations in
+                                ExerciseAsyncImagesView(exercise: variations)
+                            }
+                        }.background(Color.white)
+                    }
+                }
+                ExerciseVariationsView(variations: viewModel.variations)
+            }.task {
+                viewModel.getExerciseVariations()
+            }.navigationTitle(viewModel.exercises.name.unsafelyUnwrapped)
         }
     }
 }
