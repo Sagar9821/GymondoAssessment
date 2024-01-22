@@ -44,7 +44,7 @@ class Navigator: NavigatorType {
         switch destination {
         case .exerciseDetails(let exercise,let exerciseService):
             let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
-            let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel)
+            let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel, navigator: self)
             let hostingVc = UIHostingController(rootView: exerciseDetailsView)
             navigationController.pushViewController(hostingVc, animated: true)
             break

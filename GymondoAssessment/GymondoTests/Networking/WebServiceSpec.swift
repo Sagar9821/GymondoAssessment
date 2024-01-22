@@ -16,10 +16,10 @@ final class WebServiceSpec: XCTestCase {
     func test_getExercieses() {
         // Given
         let sut = getWebService()
-        let request = Router.getExercises.asURLRequest()
+        let request = Router.getExercisebaseinfo.asURLRequest()
         
         // When
-        let cancellable = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
+        let cancellable = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
             .sink(receiveCompletion: { _ in }, receiveValue: { (_: ExercisesResponse) in })
 
         // Then
@@ -34,11 +34,11 @@ final class WebServiceSpec: XCTestCase {
         let sut = getWebService()
         sut.response = Fail<Data, WebServiceRequestError>(error: .invalidRequest)
             .eraseToAnyPublisher()
-        let request = Router.getExercises.asURLRequest()
+        let request = Router.getExercisebaseinfo.asURLRequest()
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -55,7 +55,7 @@ final class WebServiceSpec: XCTestCase {
     func test_successWithInvalidData() {
         // Given
         let sut = getWebService()
-        let request = Router.getExercises.asURLRequest()
+        let request = Router.getExercisebaseinfo.asURLRequest()
         
         let responseData = "incorrect data".data(using: .utf8)!
         sut.response = Just(responseData)
@@ -65,7 +65,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -110,7 +110,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: ExercisesResponse?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
                 receivedItems = items
             })
@@ -135,7 +135,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: [Exercise]?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercises)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
                 receivedItems = items.results
             })

@@ -19,14 +19,14 @@ class ExerciseCell: UITableViewCell {
         // Initialization code
     }
     
-    var exercise: Exercise?{
+    var exercise: ExercisesDetails?{
         didSet {
-            lableExerciseName.text = exercise?.name
+            lableExerciseName.text = exercise?.exercises?.first(where: {$0.language == .english})?.name
         }
     }
     
     func loadImage() {
-        if let exercise = exercise,let url = exercise.images?.first?.image ,
+        if let exercise = exercise,let url = exercise.mainImage?.image ,
             let url = URL(string: url){
             self.imageViewExercise.sd_setImage(with: url,placeholderImage: UIImage(named: "placeholder")) { image, error, type, url in
                 if type == .none {

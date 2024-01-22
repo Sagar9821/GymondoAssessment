@@ -12,10 +12,11 @@ struct ExerciseAsyncImagesView: View {
     var exerciseImages: [ExerciseImage]?
     @State private var currentPage: Int = 0
     var body: some View {
-        VStack {
+        
+        LazyVStack {
             if let images = exerciseImages, !images.isEmpty {
                 ScrollView(.horizontal,showsIndicators: false) {
-                    HStack {
+                    LazyHStack {
                         ForEach(images,id: \.self) { image in
                             AsyncImage(url: URL(string: image.image ?? "")) { image in
                                 image
