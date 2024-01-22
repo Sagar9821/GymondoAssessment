@@ -17,15 +17,7 @@ struct ExerciseDetailsView: View {
         ZStack {
             Color.viewBackground.ignoresSafeArea()
             ScrollView {
-                ScrollView(.horizontal) {
-                    VStack {
-                        HStack {
-                            ForEach(viewModel.variations, id: \.self) { variations in
-                                ExerciseAsyncImagesView(exercise: variations)
-                            }
-                        }.background(Color.white)
-                    }
-                }
+                ExerciseAsyncImagesView(exerciseImages: viewModel.exercises.images)
                 ExerciseVariationsView(variations: viewModel.variations)
             }.task {
                 viewModel.getExerciseVariations()
