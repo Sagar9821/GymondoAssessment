@@ -20,4 +20,9 @@ public struct ExerciseService: ExerciseServiceType {
         let result = webService.fetch(type: ExercisesResponse.self, router: .getExercises)
         return result.eraseToAnyPublisher()
     }
+    
+    public func fetchExerciseDetails(exerciseId: Int) -> AnyPublisher<Exercise,WebServiceRequestError> {
+        let result = webService.fetch(type: Exercise.self, router: .getExerciseInfo(id: exerciseId))
+        return result.eraseToAnyPublisher()
+    }
 }

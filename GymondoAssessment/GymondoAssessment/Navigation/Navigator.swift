@@ -7,6 +7,7 @@
 
 import UIKit
 import Gymondo
+import SwiftUI
 
 enum UserFlowEntryPoint {
      case exerciseList
@@ -20,6 +21,7 @@ protocol NavigatorType {
 class Navigator: NavigatorType {
     
     private let navigationController: UINavigationController
+    
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -38,7 +40,16 @@ class Navigator: NavigatorType {
         }
     }
     
-    func navigate(to destination: Destinations) { }
+    func navigate(to destination: Destinations) {
+        switch destination {
+        case .exerciseDetails(let exercise,let exerciseService):
+            let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
+            let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel)
+            let hostingVc = UIHostingController(rootView: exerciseDetailsView)
+            navigationController.pushViewController(hostingVc, animated: true)
+            break
+        }
+    }
     
 }
 
