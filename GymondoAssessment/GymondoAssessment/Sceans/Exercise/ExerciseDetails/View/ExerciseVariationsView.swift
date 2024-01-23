@@ -29,7 +29,7 @@ struct ExerciseVariationsView: View {
                     .frame(maxWidth: .infinity,alignment: .leading)
             case .variations(let exercise):
                 if let exerciseDetails = exercise.exercises?.first(where: {$0.language == .english}) {
-                    VariationsExerciseRow(exercise: exerciseDetails)
+                    VariationsExerciseRow(exercise: exercise)
                         .background(Color.white).onTapGesture {
                             navigator.navigate(to: .exerciseDetails(exercise))
                         }
@@ -46,5 +46,5 @@ struct ExerciseVariationsView: View {
 }
 
 #Preview {
-    ExerciseVariationsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 1, description: "", language: .english, images: nil, created: "")], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
+    ExerciseVariationsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 1, description: "", language: .english, created: "")], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
 }

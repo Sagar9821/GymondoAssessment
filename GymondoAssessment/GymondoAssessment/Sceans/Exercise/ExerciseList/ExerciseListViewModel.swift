@@ -9,14 +9,21 @@ import Foundation
 import Combine
 import Gymondo
 
-protocol ExerciseListViewModelType {
-    func fetchExercise()
+public protocol ExerciseListViewModelType {
+    func fetchExercise(refreshing: Bool)
     var exercisesSubject: PassthroughSubject<[ExercisesDetails], Error> { get }
     var viewState: Published<ViewState>.Publisher { get }
     var arrayExercise: [ExercisesDetails] { get }
+    var refreshing: Published<Bool>.Publisher { get }
 }
 
 class ExerciseListViewModel: ExerciseListViewModelType {
+   
+    
+    
+    @Published var _refreshing: Bool = false
+    var refreshing: Published<Bool>.Publisher { $_refreshing }
+    
     
     var _arrayExercise: [ExercisesDetails] = []
     var arrayExercise: [ExercisesDetails]  {
@@ -34,10 +41,11 @@ class ExerciseListViewModel: ExerciseListViewModelType {
         self.excerciseServices = excerciseServices
     }
     
-    func fetchExercise() {
-        _viewState = .loading
+    func fetchExercise(refreshing: Bool = false) {
+        if refreshing { self._refreshing = true } else { _viewState = .loading }
+        
         excerciseServices.fetchExercise().sink { [weak self] completion in
-            
+            if refreshing { self?._refreshing = true }
             switch completion {
             case .finished:
                 break
@@ -45,11 +53,11 @@ class ExerciseListViewModel: ExerciseListViewModelType {
                 self?._viewState = .failure(message: error.localizedDescription)
             }
         } receiveValue: { [weak self] excerciseResponse in
-            
+            if refreshing { self?._refreshing = false } else { self?._viewState = .none }
             self?._arrayExercise.append(contentsOf: excerciseResponse.results ?? [])
             self?.exercisesSubject.send(excerciseResponse.results ?? [])
        
-            self?._viewState = .none
+            
         }.store(in: &cancellable)
 
     }

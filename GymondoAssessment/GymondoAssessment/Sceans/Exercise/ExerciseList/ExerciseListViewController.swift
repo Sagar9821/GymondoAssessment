@@ -8,16 +8,17 @@
 import UIKit
 import Combine
 
-class ExerciseListViewController: UIViewController {
+public class ExerciseListViewController: UIViewController {
 
-    @IBOutlet private weak var activityLoader: UIActivityIndicatorView!
-    @IBOutlet private weak var tableViewExercises: UITableView!
+    @IBOutlet public weak var activityLoader: UIActivityIndicatorView!
+    @IBOutlet public weak var tableViewExercises: UITableView!
     
     private var cancellable:Set<AnyCancellable> = Set<AnyCancellable>()
     
     private let navigator: NavigatorType
-    private let viewModel: ExerciseListViewModel
-    required init?(coder: NSCoder, navigator: NavigatorType, viewModel: ExerciseListViewModel) {
+    private let viewModel: ExerciseListViewModelType
+    
+    public required init?(coder: NSCoder, navigator: NavigatorType, viewModel: ExerciseListViewModelType) {
         self.navigator = navigator
         self.viewModel = viewModel
         super.init(coder: coder)
@@ -27,7 +28,7 @@ class ExerciseListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     // MARK: - Life cycle
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -37,9 +38,8 @@ class ExerciseListViewController: UIViewController {
     
     private func prepareView() {
         title = "Exercises"
-        tableViewExercises.dataSource = self
-        tableViewExercises.delegate = self
-        viewModel.fetchExercise()
+        setupExerciseTableView()
+        viewModel.fetchExercise(refreshing: false)
     }
 
     private func bindViewModelToView() {
@@ -77,14 +77,30 @@ class ExerciseListViewController: UIViewController {
         
     }
     
+    private func setupExerciseTableView() {
+        tableViewExercises.dataSource = self
+        tableViewExercises.delegate = self
+        let refreshController = UIRefreshControl()
+        tableViewExercises.refreshControl = refreshController
+        refreshController.addTarget(self, action: #selector(refreshExerciseList), for: .valueChanged)
+        viewModel.refreshing.sink { _ in
+            
+        } receiveValue: { value in
+            value == true ? self.tableViewExercises.refreshControl?.beginRefreshing() : self.tableViewExercises.refreshControl?.endRefreshing()
+        }.store(in: &cancellable)
+
+    }
     
+    @objc func refreshExerciseList() {
+        viewModel.fetchExercise(refreshing: true)
+    }
 }
 // MARK: - TableView DataSource
 extension ExerciseListViewController : UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.arrayExercise.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.getCell(ExerciseCell.self) else { return UITableViewCell() }
         cell.exercise = viewModel.arrayExercise[indexPath.row]
         return cell
@@ -92,12 +108,12 @@ extension ExerciseListViewController : UITableViewDataSource {
 }
 //MARK: TableView Delegate
 extension ExerciseListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let exerciseCell = cell as? ExerciseCell {
             exerciseCell.loadImage()
         }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let exercise = viewModel.arrayExercise[indexPath.row]
         navigator.navigate(to: .exerciseDetails(exercise))
     }

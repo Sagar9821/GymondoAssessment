@@ -99,17 +99,15 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
     public let exerciseBase: Int?
     public let description: String?
     public let language: Language?
-    public let images: [ExerciseImage]?
     public let created: String?
 
-    public init(id: Int?, uuid: String?, name: String?, exerciseBase: Int?, description: String?,language: Language?, images: [ExerciseImage]?, created: String?) {
+    public init(id: Int?, uuid: String?, name: String?, exerciseBase: Int?, description: String?,language: Language?, created: String?) {
         self.id = id
         self.uuid = uuid
         self.name = name
         self.exerciseBase = exerciseBase
         self.description = description
         self.language = language
-        self.images = images
         self.created = created
     }
 
@@ -131,7 +129,6 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
         exerciseBase = try container.decodeIfPresent(Int.self, forKey: .exerciseBase)
         description = try container.decodeIfPresent(String.self, forKey: .description)
         language = try container.decodeIfPresent(Language.self, forKey: .language)
-        images = try container.decodeIfPresent([ExerciseImage].self, forKey: .images)
         created = try container.decodeIfPresent(String.self, forKey: .created)
     }
     
@@ -143,7 +140,6 @@ public struct Exercise: Codable, Equatable,Identifiable, Hashable{
         try container.encode(exerciseBase, forKey: .exerciseBase)
         try container.encode(description, forKey: .description)
         try container.encode(language?.rawValue ?? 0, forKey: .language)
-        try container.encode(images, forKey: .images)
         try container.encode(created, forKey: .created)
     }
 }

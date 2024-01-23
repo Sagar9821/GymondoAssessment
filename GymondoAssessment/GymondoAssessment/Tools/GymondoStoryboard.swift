@@ -7,8 +7,8 @@
 
 import UIKit
 
-struct GymondoStoryboard {
-    static var exercise: UIStoryboard {
+public struct GymondoStoryboard {
+    public static var exercise: UIStoryboard {
         UIStoryboard(name: "Excercise", bundle: nil)
     }
 }

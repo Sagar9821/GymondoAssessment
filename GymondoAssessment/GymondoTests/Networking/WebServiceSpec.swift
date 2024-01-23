@@ -16,10 +16,10 @@ final class WebServiceSpec: XCTestCase {
     func test_getExercieses() {
         // Given
         let sut = getWebService()
-        let request = Router.getExercisebaseinfo.asURLRequest()
+        let request = Router.getExercisebaseinfo(limit: 20, offset: 0).asURLRequest()
         
         // When
-        let cancellable = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
+        let cancellable = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
             .sink(receiveCompletion: { _ in }, receiveValue: { (_: ExercisesResponse) in })
 
         // Then
@@ -34,11 +34,11 @@ final class WebServiceSpec: XCTestCase {
         let sut = getWebService()
         sut.response = Fail<Data, WebServiceRequestError>(error: .invalidRequest)
             .eraseToAnyPublisher()
-        let request = Router.getExercisebaseinfo.asURLRequest()
+        let request = Router.getExercisebaseinfo(limit: 20, offset: 0).asURLRequest()
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -55,7 +55,7 @@ final class WebServiceSpec: XCTestCase {
     func test_successWithInvalidData() {
         // Given
         let sut = getWebService()
-        let request = Router.getExercisebaseinfo.asURLRequest()
+        let request = Router.getExercisebaseinfo(limit: 20, offset: 0).asURLRequest()
         
         let responseData = "incorrect data".data(using: .utf8)!
         sut.response = Just(responseData)
@@ -65,7 +65,7 @@ final class WebServiceSpec: XCTestCase {
         var receivedError: WebServiceRequestError?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     receivedError = error
@@ -90,18 +90,17 @@ final class WebServiceSpec: XCTestCase {
                                          name: "Alzate Laterali",
                                          exerciseBase: 3,
                                          description: "desc",
-                                         created: "2023-08-06T10:17:17.349574+02:00",
-                                         variations: [1180,1183,1178])
+                                         created: "2023-08-06T10:17:17.349574+02:00")
 
         let item2 = TestFactory.exercise(id: 2,
                                          uuid: "0ac8ee82-5816-414c-ba9b-8a825527400d",
                                          name: "Alzate le gambe",
                                          exerciseBase: 3,
                                          description: "test",
-                                         created: "2023-08-06T10:17:17.349574+02:00",
-                                         variations: [1963,1185,1344])
-
-        guard let jsonData = TestFactory.exerciseResponse(exercies: [item1,item2]) else { return }
+                                         created: "2023-08-06T10:17:17.349574+02:00")
+        let exerciseDetails = TestFactory.getExerciseDetails(exercises: [item1,item2])
+        
+        guard let jsonData = TestFactory.exerciseResponse(exercies: [exerciseDetails]) else { return }
 
         sut.response = Just(jsonData)
             .setFailureType(to: WebServiceRequestError.self)
@@ -110,18 +109,18 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: ExercisesResponse?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
                 receivedItems = items
             })
 
         // Then
         XCTAssertNotNil(receivedItems)
-        XCTAssertEqual(receivedItems?.results?.count, 2)
-        XCTAssertEqual(receivedItems!.results?.first?.id, item1.id)
-        XCTAssertEqual(receivedItems!.results?.first?.name, item1.name)
-        XCTAssertEqual(receivedItems!.results?.last?.id, item2.id)
-        XCTAssertEqual(receivedItems!.results?.last?.name, item2.name)
+        XCTAssertEqual(receivedItems?.results?.count, 1)
+        XCTAssertEqual(receivedItems!.results?.first?.exercises?.first?.id, item1.id)
+        XCTAssertEqual(receivedItems!.results?.first?.exercises?.first?.name, item1.name)
+        XCTAssertEqual(receivedItems!.results?.first?.exercises?.last?.id, item2.id)
+        XCTAssertEqual(receivedItems!.results?.first?.exercises?.last?.name, item2.name)
     }
     
     func test_successWithEmptyList() {
@@ -135,9 +134,9 @@ final class WebServiceSpec: XCTestCase {
         var receivedItems: [Exercise]?
 
         // When
-        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo)
+        _ = sut.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
             .sink(receiveCompletion: { _ in }, receiveValue: { items in
-                receivedItems = items.results
+                receivedItems = items.results?.first?.exercises
             })
 
         // Then
