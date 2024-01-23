@@ -8,8 +8,8 @@
 import Foundation
 import Gymondo
 
-enum Destinations: Equatable {
-    static func == (lhs: Destinations, rhs: Destinations) -> Bool {
+public enum Destinations: Equatable {
+    public static func == (lhs: Destinations, rhs: Destinations) -> Bool {
         return true
     }
     

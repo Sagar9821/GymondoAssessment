@@ -9,13 +9,13 @@ import UIKit
 import Gymondo
 import SwiftUI
 
-enum UserFlowEntryPoint {
+public enum UserFlowEntryPoint {
      case exerciseList
 }
 
-protocol NavigatorType {
-     func startUserFlow(with entrypoint: UserFlowEntryPoint)
-     func navigate(to destination: Destinations)
+public protocol NavigatorType {
+    func startUserFlow(with entrypoint: UserFlowEntryPoint)
+    func navigate(to destination: Destinations)
 }
 
 class Navigator: NavigatorType {

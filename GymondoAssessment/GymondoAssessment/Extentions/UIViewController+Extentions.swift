@@ -9,7 +9,7 @@ import UIKit
 
 
 extension UIViewController {
-    static var storyboardID: String {
+    public static var storyboardID: String {
         return String(describing: self)
     }
     

@@ -246,54 +246,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F9777F68-C17B-40B9-BE9A-2A96C080F6C3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Gymondo/Networking/WebService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "fetch(type:router:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F9777F68-C17B-40B9-BE9A-2A96C080F6C3 - 70584af5585dc71a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Error) -&gt; Gymondo.WebServiceRequestError in Gymondo.WebService.fetch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(type: &#x3c4;_0_0.Type, router: Gymondo.Router) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0, Gymondo.WebServiceRequestError&gt;"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "F9777F68-C17B-40B9-BE9A-2A96C080F6C3 - 70584af5585dc71a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Error) -&gt; Gymondo.WebServiceRequestError in Gymondo.WebService.fetch&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(type: &#x3c4;_0_0.Type, router: Gymondo.Router) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_0, Gymondo.WebServiceRequestError&gt;"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "509F0C73-F52D-4E46-B6AA-47716B0D0E65"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -301,8 +253,8 @@
             filePath = "Gymondo/Networking/WebService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "handleError(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -310,62 +262,122 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9B897DB8-0CFD-4DD2-A472-B5AC808ACA29"
+            uuid = "6FFF95B3-C95D-4347-9F34-93E117188704"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gymondo/Networking/WebService.swift"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "handleError(_:)"
-            landmarkType = "7">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ExerciseServiceSpec"
+            landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "9B897DB8-0CFD-4DD2-A472-B5AC808ACA29 - df714abad0ef76fd"
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b65c81d70d37993"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "160">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "9B897DB8-0CFD-4DD2-A472-B5AC808ACA29 - df714abad0ef7522"
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - fe147d6ec67a8048"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "160">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "68">
                </Location>
                <Location
-                  uuid = "9B897DB8-0CFD-4DD2-A472-B5AC808ACA29 - df714abad0ef7522"
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - ed43e44117fd64d2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init(selector: ObjectiveC.Selector) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "396">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - 89d9f82cbad907a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init(selector: ObjectiveC.Selector) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b0cb419c614c62d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init() -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b995b9413d4b65bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init() -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - c6869fdf7b87e194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__deallocating_deinit"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -373,97 +385,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6412F529-95BC-4290-8503-8CBC6C445ABA"
-            shouldBeEnabled = "Yes"
+            uuid = "BBCFC4C3-7938-4BB5-8B93-C55C3190D318"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gymondo/Networking/WebService.swift"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "handleError(_:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6412F529-95BC-4290-8503-8CBC6C445ABA - df714abad0ef7522"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "6412F529-95BC-4290-8503-8CBC6C445ABA - df714abad0ef7522"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "396">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1A8EFE86-E59D-4C2F-ACBD-B0756B680716"
+            uuid = "35C45E8E-9828-4189-A796-47CC0CC46E3A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Gymondo/Networking/WebService.swift"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "handleError(_:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1A8EFE86-E59D-4C2F-ACBD-B0756B680716 - df714abad0ef76dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "500">
-               </Location>
-               <Location
-                  uuid = "1A8EFE86-E59D-4C2F-ACBD-B0756B680716 - df714abad0ef76dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Gymondo.WebService.handleError(Swift.Error) -&gt; Gymondo.WebServiceRequestError"
-                  moduleName = "Gymondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/Gymondo/Networking/WebService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "692">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B616EA86-C946-429B-B23B-49CA4BADB2FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

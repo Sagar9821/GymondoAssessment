@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ViewState {
+public enum ViewState {
     case none
     case loading
     case success

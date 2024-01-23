@@ -10,6 +10,7 @@ import Combine
 
 public protocol ExerciseServiceType {
     func fetchExercise() -> AnyPublisher<ExercisesResponse, WebServiceRequestError>
+    func fetchExerciseDetails(exerciseId: Int) -> AnyPublisher<ExercisesDetails,WebServiceRequestError> 
 }
 
 public struct ExerciseService: ExerciseServiceType {
@@ -17,7 +18,7 @@ public struct ExerciseService: ExerciseServiceType {
     
     public init() {}
     public func fetchExercise() -> AnyPublisher<ExercisesResponse, WebServiceRequestError> {
-        let result = webService.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 20))
+        let result = webService.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 0))
         return result.eraseToAnyPublisher()
     }
     

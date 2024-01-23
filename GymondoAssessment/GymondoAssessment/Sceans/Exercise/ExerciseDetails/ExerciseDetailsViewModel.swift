@@ -9,33 +9,33 @@ import Combine
 import SwiftUI
 import Gymondo
 
-protocol ExerciseDetailsViewModelType  {
+public protocol ExerciseDetailsViewModelType  {
     var exercises: ExercisesDetails { get }
     func getExerciseVariations()
     var variations: [Exercise] { get }
 }
 
-enum VariationsDetail {
+public enum VariationsDetail {
     case loading
     case variations(ExercisesDetails)
     case error(String)
 }
 
-class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
+public class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
     
-    @Published var exercises: ExercisesDetails
-    @Published var variations: [Exercise] = []
-    @Published var variationsDetail: VariationsDetail = .loading
+    @Published public var exercises: ExercisesDetails
+    @Published public var variations: [Exercise] = []
+    @Published public var variationsDetail: VariationsDetail = .loading
     
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
     
-    private let exerciseService: ExerciseService
-    init(exercises: ExercisesDetails,exerciseService: ExerciseService) {
+    private let exerciseService: ExerciseServiceType
+    public init(exercises: ExercisesDetails,exerciseService: ExerciseServiceType) {
         self.exercises = exercises
         self.exerciseService = exerciseService
     }
     
-    func getExerciseVariations() {
+    public func getExerciseVariations() {
         
         if let variations = exercises.variations {
             variationsDetail = .loading

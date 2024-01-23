@@ -12,7 +12,6 @@
 		6E4D827E2B5A5A9A00BB063D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D827D2B5A5A9A00BB063D /* SceneDelegate.swift */; };
 		6E4D82852B5A5A9C00BB063D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4D82842B5A5A9C00BB063D /* Assets.xcassets */; };
 		6E4D82882B5A5A9C00BB063D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4D82862B5A5A9C00BB063D /* LaunchScreen.storyboard */; };
-		6E4D82E02B5A5E8600BB063D /* GymondoAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D82DF2B5A5E8600BB063D /* GymondoAssessmentTests.swift */; };
 		6E4D82FC2B5A5EE800BB063D /* Gymondo.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D82FB2B5A5EE800BB063D /* Gymondo.docc */; };
 		6E4D83022B5A5EE800BB063D /* Gymondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4D82F82B5A5EE800BB063D /* Gymondo.framework */; };
 		6E4D83092B5A5EE800BB063D /* GymondoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83082B5A5EE800BB063D /* GymondoTests.swift */; };
@@ -27,6 +26,11 @@
 		6E4D83292B5A713F00BB063D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83282B5A713F00BB063D /* APIRouter.swift */; };
 		6E4D832B2B5A738600BB063D /* RouterEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */; };
 		6E4D832D2B5A75EA00BB063D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832C2B5A75EA00BB063D /* Environment.swift */; };
+		6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */; };
+		6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */; };
+		6E5089A12B5FF05600847CDA /* ExerciseDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */; };
+		6E5089A32B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */; };
+		6E5089E32B601C7B00847CDA /* MockExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089E22B601C7B00847CDA /* MockExerciseService.swift */; };
 		6E50CC192B5E50AC0031187D /* ExerciseAsyncImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC182B5E50AC0031187D /* ExerciseAsyncImagesView.swift */; };
 		6E50CC1B2B5E56250031187D /* ExerciseVariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC1A2B5E56250031187D /* ExerciseVariationsView.swift */; };
 		6E50CC1D2B5E575F0031187D /* VariationsExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC1C2B5E575F0031187D /* VariationsExerciseRow.swift */; };
@@ -50,6 +54,9 @@
 		6ECE0A9E2B5D62420010576D /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6ECE0A9D2B5D62420010576D /* SDWebImageMapKit */; };
 		6ECE0AA12B5D7DB80010576D /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE0AA02B5D7DB80010576D /* ExerciseDetailsView.swift */; };
 		6ECE0AA32B5D7F450010576D /* ExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE0AA22B5D7F450010576D /* ExerciseDetailsViewModel.swift */; };
+		6EE4F06D2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */; };
+		6EE4F0702B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */; };
+		6EE4F0732B5FC4F100EDBDA7 /* MockNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F0722B5FC4F100EDBDA7 /* MockNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +113,6 @@
 		6E4D82872B5A5A9C00BB063D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4D82892B5A5A9C00BB063D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E4D82DD2B5A5E8600BB063D /* GymondoAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymondoAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E4D82DF2B5A5E8600BB063D /* GymondoAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoAssessmentTests.swift; sourceTree = "<group>"; };
 		6E4D82F82B5A5EE800BB063D /* Gymondo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gymondo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4D82FA2B5A5EE800BB063D /* Gymondo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gymondo.h; sourceTree = "<group>"; };
 		6E4D82FB2B5A5EE800BB063D /* Gymondo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Gymondo.docc; sourceTree = "<group>"; };
@@ -120,6 +126,11 @@
 		6E4D83282B5A713F00BB063D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterEndpoints.swift; sourceTree = "<group>"; };
 		6E4D832C2B5A75EA00BB063D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseCell+TestHelpers.swift"; sourceTree = "<group>"; };
+		6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewControllerTests.swift; sourceTree = "<group>"; };
+		6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewTests.swift; sourceTree = "<group>"; };
+		6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		6E5089E22B601C7B00847CDA /* MockExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseService.swift; sourceTree = "<group>"; };
 		6E50CC182B5E50AC0031187D /* ExerciseAsyncImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAsyncImagesView.swift; sourceTree = "<group>"; };
 		6E50CC1A2B5E56250031187D /* ExerciseVariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationsView.swift; sourceTree = "<group>"; };
 		6E50CC1C2B5E575F0031187D /* VariationsExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsExerciseRow.swift; sourceTree = "<group>"; };
@@ -141,6 +152,9 @@
 		6E9A86812B5BB335004A71F2 /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
 		6ECE0AA02B5D7DB80010576D /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
 		6ECE0AA22B5D7F450010576D /* ExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseListViewController+TestHelper.swift"; sourceTree = "<group>"; };
+		6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseListViewModel.swift; sourceTree = "<group>"; };
+		6EE4F0722B5FC4F100EDBDA7 /* MockNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +235,10 @@
 		6E4D82DE2B5A5E8600BB063D /* GymondoAssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E4D82DF2B5A5E8600BB063D /* GymondoAssessmentTests.swift */,
+				6E50899D2B5FEE9300847CDA /* Sceans */,
+				6EE4F0712B5FC4E600EDBDA7 /* Navigation */,
+				6EE4F06E2B5FC3AB00EDBDA7 /* ViewModel */,
+				6EE4F06B2B5FC06700EDBDA7 /* Helper */,
 			);
 			path = GymondoAssessmentTests;
 			sourceTree = "<group>";
@@ -294,6 +311,15 @@
 				6E4D83262B5A6C1400BB063D /* WebServiceSpec.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		6E50899D2B5FEE9300847CDA /* Sceans */ = {
+			isa = PBXGroup;
+			children = (
+				6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */,
+				6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */,
+			);
+			path = Sceans;
 			sourceTree = "<group>";
 		};
 		6E50CC172B5E50910031187D /* View */ = {
@@ -402,6 +428,33 @@
 				6ECE0AA22B5D7F450010576D /* ExerciseDetailsViewModel.swift */,
 			);
 			path = ExerciseDetails;
+			sourceTree = "<group>";
+		};
+		6EE4F06B2B5FC06700EDBDA7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */,
+				6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */,
+				6E5089E22B601C7B00847CDA /* MockExerciseService.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6EE4F06E2B5FC3AB00EDBDA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */,
+				6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6EE4F0712B5FC4E600EDBDA7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4F0722B5FC4F100EDBDA7 /* MockNavigator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,7 +663,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4D82E02B5A5E8600BB063D /* GymondoAssessmentTests.swift in Sources */,
+				6EE4F0702B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift in Sources */,
+				6E5089A12B5FF05600847CDA /* ExerciseDetailsViewTests.swift in Sources */,
+				6EE4F06D2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift in Sources */,
+				6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */,
+				6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */,
+				6E5089A32B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift in Sources */,
+				6EE4F0732B5FC4F100EDBDA7 /* MockNavigator.swift in Sources */,
+				6E5089E32B601C7B00847CDA /* MockExerciseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
