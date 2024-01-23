@@ -42,7 +42,12 @@ public struct WebService: WebServiceType {
                 
                 if !(200...299).contains(response.statusCode) {
                     logRequest(response: response, request: request, success: false)
-                    throw getHttpError(response.statusCode)
+                    if let webError = try? JSONDecoder().decode(WebResponseError.self, from: data) {
+                        throw WebServiceRequestError.notFound(error: webError)
+                    } else {
+                        throw getHttpError(response.statusCode)
+                    }
+                    
                 } else {
                     logRequest(response: response, request: request, success: true)
                 }
@@ -71,7 +76,7 @@ public struct WebService: WebServiceType {
         case 400: return .badRequest
         case 401: return .unauthorized
         case 403: return .forbidden
-        case 404: return .notFound
+        case 404: return .notFound(error: nil)
         case 402, 405...499: return .error(statusCode)
         case 500: return .serverError
         case 501...599: return .badRequest

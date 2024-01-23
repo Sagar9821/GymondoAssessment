@@ -15,10 +15,18 @@ protocol ExerciseDetailsViewModelType  {
     var variations: [Exercise] { get }
 }
 
+enum VariationsDetail {
+    case loading
+    case variations([Exercise])
+    case error(String)
+}
+
 class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
     
     @Published var exercises: ExercisesDetails
     @Published var variations: [Exercise] = []
+    @Published var variationsDetail: VariationsDetail = .loading
+    
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
     
     private let exerciseService: ExerciseService
@@ -28,17 +36,21 @@ class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
     }
     
     func getExerciseVariations() {
+        
         if let variations = exercises.variations {
+            variationsDetail = .loading
             exerciseService.fetchExerciseDetails(exerciseId: variations).sink { completion in
                 switch completion {
                 case .finished:
                     break
-                case .failure(let _):
-                    break
+                case .failure(let error):
+                    self.variationsDetail = .error(error.message)
                 }
             } receiveValue: { exercise in
-                self.variations.append(contentsOf: exercise.exercises ?? [])
+                self.variationsDetail = .variations(exercise.exercises ?? [])
             }.store(in: &cancellable)
+        } else {
+            variationsDetail = .error("No variations")
         }
     }
     

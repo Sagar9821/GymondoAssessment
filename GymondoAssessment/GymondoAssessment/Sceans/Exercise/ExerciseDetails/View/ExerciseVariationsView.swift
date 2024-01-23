@@ -22,17 +22,22 @@ struct ExerciseVariationsView: View {
             Text("Variations")
                 .font(Font.system(size: 20,weight: .bold))
                 .frame(maxWidth: .infinity,alignment: .leading)
-            if viewModel.variations.isEmpty {
-                Text("No Variation exercise")
+            switch viewModel.variationsDetail {
+            case .loading:
+                Text("Loading..")
                     .font(Font.system(size: 14,weight: .light))
                     .frame(maxWidth: .infinity,alignment: .leading)
-            } else {
-                ForEach(viewModel.variations) { exercise in
+            case .variations(let variations):
+                ForEach(variations) { exercise in
                     VariationsExerciseRow(exercise: exercise)
                         .background(Color.white).onTapGesture {
 //                            self.navigator.navigate(to: .exerciseDetails(exercise, viewModel.))
                         }
                 }
+            case .error(let errorMessage):
+                Text(errorMessage)
+                    .font(Font.system(size: 14,weight: .light))
+                    .frame(maxWidth: .infinity,alignment: .leading)
             }
         }
         .padding()
