@@ -42,7 +42,8 @@ class Navigator: NavigatorType {
     
     func navigate(to destination: Destinations) {
         switch destination {
-        case .exerciseDetails(let exercise,let exerciseService):
+        case .exerciseDetails(let exercise):
+            let exerciseService: ExerciseService = ExerciseService()
             let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
             let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel, navigator: self)
             let hostingVc = UIHostingController(rootView: exerciseDetailsView)

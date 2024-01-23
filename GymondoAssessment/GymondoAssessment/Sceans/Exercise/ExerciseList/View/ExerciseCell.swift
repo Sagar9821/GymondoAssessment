@@ -8,12 +8,15 @@
 import UIKit
 import Gymondo
 import SDWebImage
+import Combine
+
 class ExerciseCell: UITableViewCell {
 
     @IBOutlet private weak var lableExerciseName: UILabel!
     @IBOutlet private weak var imageViewExercise: UIImageView!
     @IBOutlet private weak var imageWidthConstant:NSLayoutConstraint!
     
+  
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

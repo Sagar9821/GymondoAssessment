@@ -27,13 +27,14 @@ struct ExerciseVariationsView: View {
                 Text("Loading..")
                     .font(Font.system(size: 14,weight: .light))
                     .frame(maxWidth: .infinity,alignment: .leading)
-            case .variations(let variations):
-                ForEach(variations) { exercise in
-                    VariationsExerciseRow(exercise: exercise)
+            case .variations(let exercise):
+                if let exerciseDetails = exercise.exercises?.first(where: {$0.language == .english}) {
+                    VariationsExerciseRow(exercise: exerciseDetails)
                         .background(Color.white).onTapGesture {
-//                            self.navigator.navigate(to: .exerciseDetails(exercise, viewModel.))
+                            navigator.navigate(to: .exerciseDetails(exercise))
                         }
                 }
+                
             case .error(let errorMessage):
                 Text(errorMessage)
                     .font(Font.system(size: 14,weight: .light))

@@ -204,6 +204,7 @@
 		6E4D827A2B5A5A9A00BB063D /* GymondoAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				6E50CC222B5F9C3E0031187D /* Common */,
 				6E9A867C2B5B975C004A71F2 /* Layouts */,
 				6E56A1532B5AC1C00056B7FA /* Extentions */,
 				6E56A1502B5AC1890056B7FA /* Tools */,
@@ -304,6 +305,13 @@
 				6E50CC1E2B5E74640031187D /* PageControl.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6E50CC222B5F9C3E0031187D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		6E56A1402B5AAED10056B7FA /* Services */ = {

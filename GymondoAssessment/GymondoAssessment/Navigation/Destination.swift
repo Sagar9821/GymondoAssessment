@@ -13,5 +13,5 @@ enum Destinations: Equatable {
         return true
     }
     
-    case exerciseDetails(ExercisesDetails,ExerciseService)
+    case exerciseDetails(ExercisesDetails)
 }

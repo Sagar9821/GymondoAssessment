@@ -26,7 +26,7 @@ struct ExerciseDetailsView: View {
                 ExerciseVariationsView(viewModel: viewModel, navigator: navigator)
             }.task {
                 viewModel.getExerciseVariations()
-            }.navigationTitle(viewModel.exercises.exercises.unsafelyUnwrapped.first.unsafelyUnwrapped.name ?? "")
+            }.navigationTitle(viewModel.exercises.exercises?.first(where: {$0.language == .english}).unsafelyUnwrapped.name.unsafelyUnwrapped ?? "")
         }
     }
 }

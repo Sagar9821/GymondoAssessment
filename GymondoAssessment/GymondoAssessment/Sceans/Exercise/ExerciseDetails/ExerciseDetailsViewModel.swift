@@ -17,7 +17,7 @@ protocol ExerciseDetailsViewModelType  {
 
 enum VariationsDetail {
     case loading
-    case variations([Exercise])
+    case variations(ExercisesDetails)
     case error(String)
 }
 
@@ -47,7 +47,7 @@ class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewModelType {
                     self.variationsDetail = .error(error.message)
                 }
             } receiveValue: { exercise in
-                self.variationsDetail = .variations(exercise.exercises ?? [])
+                self.variationsDetail = .variations(exercise)
             }.store(in: &cancellable)
         } else {
             variationsDetail = .error("No variations")
