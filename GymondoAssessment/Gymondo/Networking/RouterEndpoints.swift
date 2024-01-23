@@ -9,12 +9,20 @@ import Foundation
 
 public enum Router: APIRouter {
     
-    case getExercises
+    case getExercisebaseinfo(limit: Int,offset: Int)
     case getExerciseInfo(id: Int)
     
     func asURLRequest() -> URLRequest? {
         guard var urlComponents = URLComponents(string: Environment.BASEURL) else {  return nil }
         urlComponents.path = "\(urlComponents.path)\(curl)"
+        
+        if let queryParams = queryParams {
+            var params: [URLQueryItem] = []
+            for(key,value) in queryParams {
+                params.append(URLQueryItem(name: key, value: value))
+            }
+            urlComponents.queryItems = params
+        }
         guard let finalURL = urlComponents.url else {  return nil }
         var request = URLRequest(url: finalURL)
         request.httpMethod = method.rawValue
@@ -25,18 +33,29 @@ public enum Router: APIRouter {
 extension Router {
     public var method: HTTPMethod {
         switch self {
-        case .getExercises,.getExerciseInfo:
+        case .getExercisebaseinfo,.getExerciseInfo:
             return .get
         }
     }
     
     public var curl: String {
         switch self {
-        case .getExercises:
-            return "/exerciseinfo"
+        case .getExercisebaseinfo:
+            return "/exercisebaseinfo"
         case .getExerciseInfo(id: let id):
-            return "/exerciseinfo/\(id)"
+            return "/exercisebaseinfo/\(id)"
         }
     }
     
+}
+
+extension Router {
+    public var queryParams: [String : String]? {
+        switch self {
+        case .getExercisebaseinfo(let limit, let offset):
+            return ["limit":"\(limit)","offset":"\(offset)"]
+        case .getExerciseInfo:
+            return nil
+        }
+    }
 }

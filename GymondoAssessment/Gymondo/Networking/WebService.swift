@@ -42,7 +42,12 @@ public struct WebService: WebServiceType {
                 
                 if !(200...299).contains(response.statusCode) {
                     logRequest(response: response, request: request, success: false)
-                    throw getHttpError(response.statusCode)
+                    if let webError = try? JSONDecoder().decode(WebResponseError.self, from: data) {
+                        throw WebServiceRequestError.notFound(error: webError)
+                    } else {
+                        throw getHttpError(response.statusCode)
+                    }
+                    
                 } else {
                     logRequest(response: response, request: request, success: true)
                 }
@@ -52,7 +57,7 @@ public struct WebService: WebServiceType {
             .receive(on: DispatchQueue.main)
             .decode(type: type.self, decoder: JSONDecoder())
             .mapError { error in
-                return WebServiceRequestError.decodingError(error.localizedDescription)
+                return self.handleError(error)
             }
             .eraseToAnyPublisher()
     }
@@ -71,7 +76,7 @@ public struct WebService: WebServiceType {
         case 400: return .badRequest
         case 401: return .unauthorized
         case 403: return .forbidden
-        case 404: return .notFound
+        case 404: return .notFound(error: nil)
         case 402, 405...499: return .error(statusCode)
         case 500: return .serverError
         case 501...599: return .badRequest
@@ -79,6 +84,32 @@ public struct WebService: WebServiceType {
         }
     }
 
+    private func handleError(_ error: Error) -> WebServiceRequestError {
+        switch error {
+        case is Swift.DecodingError:
+            if let decodingError = error as? DecodingError {
+                    switch decodingError {
+                    case .dataCorrupted(let context):
+                        print("Data corrupted. Context: \(context)")
+                    case .keyNotFound(let key, let context):
+                        print("Key not found: \(key.stringValue). Context: \(context)")
+                    case .typeMismatch(let type, let context):
+                        print("Type mismatch: \(type). Context: \(context)")
+                    case .valueNotFound(let type, let context):
+                        print("Value not found for type \(type). Context: \(context)")
+                    @unknown default:
+                        print("An unknown decoding error occurred.")
+                    }
+                } else {
+                    print("An unexpected error occurred: \(error)")
+                }
+            return .decodingError(error.localizedDescription)
+        case let error as WebServiceRequestError:
+            return error
+        default:
+            return .unknownError
+        }
+    }
 }
 
 

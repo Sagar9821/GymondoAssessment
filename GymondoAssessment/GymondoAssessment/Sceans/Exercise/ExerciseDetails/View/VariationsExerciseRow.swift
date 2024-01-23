@@ -39,5 +39,5 @@ struct VariationsExerciseRow: View {
 }
 
 #Preview {
-    VariationsExerciseRow(exercise: Exercise(id: 1, uuid: "", name: "Alzate Laterali", exerciseBase: 1, description: "", images: nil, created: "", variations: []))
+    VariationsExerciseRow(exercise: Exercise(id: 1, uuid: "", name: "Alzate Laterali", exerciseBase: 1, description: "", language: .english, images: nil, created: ""))
 }

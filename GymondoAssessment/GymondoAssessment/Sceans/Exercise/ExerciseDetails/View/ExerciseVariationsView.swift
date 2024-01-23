@@ -9,21 +9,36 @@ import SwiftUI
 import Gymondo
 
 struct ExerciseVariationsView: View {
-    var variations: [Exercise]
+    @ObservedObject var viewModel: ExerciseDetailsViewModel
+    var navigator: NavigatorType
+    
+    init(viewModel: ExerciseDetailsViewModel, navigator: NavigatorType) {
+        self.viewModel = viewModel
+        self.navigator = navigator
+    }
+    
     var body: some View {
-        VStack(spacing: 5){
+        LazyVStack(spacing: 5){
             Text("Variations")
                 .font(Font.system(size: 20,weight: .bold))
                 .frame(maxWidth: .infinity,alignment: .leading)
-            if variations.isEmpty {
-                Text("No Variation exercise")
+            switch viewModel.variationsDetail {
+            case .loading:
+                Text("Loading..")
                     .font(Font.system(size: 14,weight: .light))
                     .frame(maxWidth: .infinity,alignment: .leading)
-            } else {
-                ForEach(variations) { exercise in
-                    VariationsExerciseRow(exercise: exercise)
-                        .background(Color.white)
+            case .variations(let exercise):
+                if let exerciseDetails = exercise.exercises?.first(where: {$0.language == .english}) {
+                    VariationsExerciseRow(exercise: exerciseDetails)
+                        .background(Color.white).onTapGesture {
+                            navigator.navigate(to: .exerciseDetails(exercise))
+                        }
                 }
+                
+            case .error(let errorMessage):
+                Text(errorMessage)
+                    .font(Font.system(size: 14,weight: .light))
+                    .frame(maxWidth: .infinity,alignment: .leading)
             }
         }
         .padding()
@@ -31,5 +46,5 @@ struct ExerciseVariationsView: View {
 }
 
 #Preview {
-    ExerciseVariationsView(variations: [])
+    ExerciseVariationsView(viewModel: ExerciseDetailsViewModel(exercises: ExercisesDetails(id: 1, uuid: "", images: [], exercises: [Exercise(id: 1, uuid: "", name: "", exerciseBase: 1, description: "", language: .english, images: nil, created: "")], variations: 1), exerciseService: ExerciseService()), navigator: Navigator(navigationController: UINavigationController()))
 }

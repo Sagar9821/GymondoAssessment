@@ -11,22 +11,22 @@ import Gymondo
 
 protocol ExerciseListViewModelType {
     func fetchExercise()
-    var exercisesSubject: PassthroughSubject<[Exercise], Error> { get }
+    var exercisesSubject: PassthroughSubject<[ExercisesDetails], Error> { get }
     var viewState: Published<ViewState>.Publisher { get }
-    var arrayExercise: [Exercise] { get }
+    var arrayExercise: [ExercisesDetails] { get }
 }
 
 class ExerciseListViewModel: ExerciseListViewModelType {
     
-    var _arrayExercise: [Exercise] = []
-    var arrayExercise: [Exercise]  {
+    var _arrayExercise: [ExercisesDetails] = []
+    var arrayExercise: [ExercisesDetails]  {
         return _arrayExercise
     }
     
     @Published var _viewState: ViewState = .none
     var viewState: Published<ViewState>.Publisher { $_viewState }
     
-    var exercisesSubject: PassthroughSubject<[Exercise], Error> = PassthroughSubject<[Exercise], Error>()
+    var exercisesSubject: PassthroughSubject<[ExercisesDetails], Error> = PassthroughSubject<[ExercisesDetails], Error>()
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
     
     let excerciseServices: ExerciseService
@@ -45,6 +45,7 @@ class ExerciseListViewModel: ExerciseListViewModelType {
                 self?._viewState = .failure(message: error.localizedDescription)
             }
         } receiveValue: { [weak self] excerciseResponse in
+            
             self?._arrayExercise.append(contentsOf: excerciseResponse.results ?? [])
             self?.exercisesSubject.send(excerciseResponse.results ?? [])
        

@@ -99,6 +99,6 @@ extension ExerciseListViewController: UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let exercise = viewModel.arrayExercise[indexPath.row]
-        navigator.navigate(to: .exerciseDetails(exercise,viewModel.excerciseServices))
+        navigator.navigate(to: .exerciseDetails(exercise))
     }
 }

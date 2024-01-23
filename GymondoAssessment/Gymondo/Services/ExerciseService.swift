@@ -17,12 +17,12 @@ public struct ExerciseService: ExerciseServiceType {
     
     public init() {}
     public func fetchExercise() -> AnyPublisher<ExercisesResponse, WebServiceRequestError> {
-        let result = webService.fetch(type: ExercisesResponse.self, router: .getExercises)
+        let result = webService.fetch(type: ExercisesResponse.self, router: .getExercisebaseinfo(limit: 20, offset: 20))
         return result.eraseToAnyPublisher()
     }
     
-    public func fetchExerciseDetails(exerciseId: Int) -> AnyPublisher<Exercise,WebServiceRequestError> {
-        let result = webService.fetch(type: Exercise.self, router: .getExerciseInfo(id: exerciseId))
+    public func fetchExerciseDetails(exerciseId: Int) -> AnyPublisher<ExercisesDetails,WebServiceRequestError> {
+        let result = webService.fetch(type: ExercisesDetails.self, router: .getExerciseInfo(id: exerciseId))
         return result.eraseToAnyPublisher()
     }
 }
