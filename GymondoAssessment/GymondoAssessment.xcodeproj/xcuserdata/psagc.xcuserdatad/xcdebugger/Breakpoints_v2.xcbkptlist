@@ -262,32 +262,171 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8659E563-83F2-4A3D-9A91-DD6B3F0A6A56"
+            uuid = "6FFF95B3-C95D-4347-9F34-93E117188704"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GymondoAssessment/Sceans/Exercise/ExerciseList/ExerciseListViewController.swift"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ExerciseServiceSpec"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b65c81d70d37993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - fe147d6ec67a8048"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - ed43e44117fd64d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init(selector: ObjectiveC.Selector) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - 89d9f82cbad907a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init(selector: ObjectiveC.Selector) -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b0cb419c614c62d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__allocating_init() -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - b995b9413d4b65bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.init() -&gt; GymondoTests.ExerciseServiceSpec"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "6FFF95B3-C95D-4347-9F34-93E117188704 - c6869fdf7b87e194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoTests.ExerciseServiceSpec.__deallocating_deinit"
+                  moduleName = "GymondoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoTests/Services/ExerciseServiceSpec.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBCFC4C3-7938-4BB5-8B93-C55C3190D318"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "98AE70EE-461E-41D7-AAB3-F727654729D2"
+            uuid = "35C45E8E-9828-4189-A796-47CC0CC46E3A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GymondoAssessment/Sceans/Exercise/ExerciseList/ExerciseListViewController.swift"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B616EA86-C946-429B-B23B-49CA4BADB2FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Services/ExerciseServiceSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "test_endToEndTestServerGETExercisesResult_matchesAPIData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

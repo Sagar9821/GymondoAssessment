@@ -6,30 +6,39 @@
 //
 
 import XCTest
+import Gymondo
+import GymondoAssessment
+import Combine
 
 final class ExerciseDetailsViewTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_exercise_titleName() {
+        let (view, viewModel, service) = getExerciseDetailsView()
+        service.mockedResponseExerciseDetails = Just(exerciseDetails)
+            .setFailureType(to: WebServiceRequestError.self)
+            .eraseToAnyPublisher()
+        viewModel.getExerciseVariations()
+        XCTAssert(viewModel.exercises.id == 1)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func getExerciseDetailsView() -> (ExerciseDetailsView,ExerciseDetailsViewModel,MockExerciseService) {
+        let mockNavigator = MockNavigator(navigationController: UINavigationController())        
+        let mockExerciseService = MockExerciseService()
+        let viewModel = ExerciseDetailsViewModel(exercises: exerciseDetails, exerciseService: mockExerciseService)
+        let exerciseDetailsView = ExerciseDetailsView(viewModel: viewModel, navigator: mockNavigator)
+        return (exerciseDetailsView,viewModel,mockExerciseService)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    var exerciseDetails: ExercisesDetails {
+        let exercise = Exercise(id: 1,
+                                uuid: "4371e111-5b1f-4679-968e-bb5d9a48ebe2",
+                                name: "Alzate Laterali",
+                                exerciseBase: 3,
+                                description: "desc", language: .english,
+                                created: "2023-08-06T10:17:17.349574+02:00")
+        
+        let exerciseDetails = ExercisesDetails(id:1, uuid:"151434a5-c046-459f-a3a9-c3125075856f", images:[], exercises:[exercise], variations:48)
+        return exerciseDetails
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }

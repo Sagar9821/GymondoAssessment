@@ -8,16 +8,16 @@
 import SwiftUI
 import Gymondo
 
-struct ExerciseDetailsView: View {
+public struct ExerciseDetailsView: View {
     
     @ObservedObject var viewModel: ExerciseDetailsViewModel
     var navigator: NavigatorType
-    init(viewModel: ExerciseDetailsViewModel, navigator: NavigatorType) {
+    public init(viewModel: ExerciseDetailsViewModel, navigator: NavigatorType) {
         self.viewModel = viewModel
         self.navigator = navigator
     }
     
-    var body: some View {
+    public var body: some View {
         
         ZStack {
             Color.viewBackground.ignoresSafeArea()

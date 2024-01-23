@@ -15,6 +15,7 @@ public protocol ExerciseListViewModelType {
     var viewState: Published<ViewState>.Publisher { get }
     var arrayExercise: [ExercisesDetails] { get }
     var refreshing: Published<Bool>.Publisher { get }
+        
 }
 
 class ExerciseListViewModel: ExerciseListViewModelType {
@@ -36,8 +37,8 @@ class ExerciseListViewModel: ExerciseListViewModelType {
     var exercisesSubject: PassthroughSubject<[ExercisesDetails], Error> = PassthroughSubject<[ExercisesDetails], Error>()
     private var cancellable: Set<AnyCancellable> = Set<AnyCancellable>()
     
-    let excerciseServices: ExerciseService
-    init(excerciseServices: ExerciseService) {
+    let excerciseServices: ExerciseServiceType
+    init(excerciseServices: ExerciseServiceType) {
         self.excerciseServices = excerciseServices
     }
     

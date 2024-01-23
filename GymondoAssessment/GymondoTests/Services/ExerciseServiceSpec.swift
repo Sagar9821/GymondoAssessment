@@ -28,7 +28,7 @@ final class ExerciseServiceSpec: XCTestCase {
                     XCTFail("Expected successful data result, got \(error) instead")
                 }
         } receiveValue: { exerciseResponse in            
-            XCTAssertTrue(((exerciseResponse.results?.contains(where: {$0.id == TestFactory.exercise().id})) != nil))
+            XCTAssertTrue(((exerciseResponse.results?.contains(where: {$0.id == TestFactory.exercise(id: 31).id})) != nil))
         }
         wait(for: [exp], timeout: 10.0)
     }

@@ -29,6 +29,8 @@
 		6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */; };
 		6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */; };
 		6E5089A12B5FF05600847CDA /* ExerciseDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */; };
+		6E5089A32B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */; };
+		6E5089E32B601C7B00847CDA /* MockExerciseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089E22B601C7B00847CDA /* MockExerciseService.swift */; };
 		6E50CC192B5E50AC0031187D /* ExerciseAsyncImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC182B5E50AC0031187D /* ExerciseAsyncImagesView.swift */; };
 		6E50CC1B2B5E56250031187D /* ExerciseVariationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC1A2B5E56250031187D /* ExerciseVariationsView.swift */; };
 		6E50CC1D2B5E575F0031187D /* VariationsExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50CC1C2B5E575F0031187D /* VariationsExerciseRow.swift */; };
@@ -127,6 +129,8 @@
 		6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseCell+TestHelpers.swift"; sourceTree = "<group>"; };
 		6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewControllerTests.swift; sourceTree = "<group>"; };
 		6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewTests.swift; sourceTree = "<group>"; };
+		6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		6E5089E22B601C7B00847CDA /* MockExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseService.swift; sourceTree = "<group>"; };
 		6E50CC182B5E50AC0031187D /* ExerciseAsyncImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAsyncImagesView.swift; sourceTree = "<group>"; };
 		6E50CC1A2B5E56250031187D /* ExerciseVariationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVariationsView.swift; sourceTree = "<group>"; };
 		6E50CC1C2B5E575F0031187D /* VariationsExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsExerciseRow.swift; sourceTree = "<group>"; };
@@ -431,6 +435,7 @@
 			children = (
 				6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */,
 				6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */,
+				6E5089E22B601C7B00847CDA /* MockExerciseService.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */,
+				6E5089A22B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -662,7 +668,9 @@
 				6EE4F06D2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift in Sources */,
 				6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */,
 				6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */,
+				6E5089A32B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift in Sources */,
 				6EE4F0732B5FC4F100EDBDA7 /* MockNavigator.swift in Sources */,
+				6E5089E32B601C7B00847CDA /* MockExerciseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
