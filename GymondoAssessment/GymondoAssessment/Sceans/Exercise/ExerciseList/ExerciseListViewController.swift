@@ -64,15 +64,15 @@ public class ExerciseListViewController: UIViewController {
                         .store(in: &cancellable)
         
         
-        viewModel.exercisesSubject.sink { completion in
+        viewModel.exercisesSubject.sink { [weak self] completion in
             switch completion {
             case .finished:
                 print("complete")
             case .failure(let error):
                 print(error.localizedDescription)
             }
-        } receiveValue: { exercise in
-            self.tableViewExercises.reloadData()
+        } receiveValue: { [weak self] exercise in
+            self?.tableViewExercises.reloadData()
             
         }.store(in: &cancellable)
         
@@ -86,12 +86,12 @@ public class ExerciseListViewController: UIViewController {
         let refreshController = UIRefreshControl()
         tableViewExercises.refreshControl = refreshController
         refreshController.addTarget(self, action: #selector(refreshExerciseList), for: .valueChanged)
-        viewModel.refreshing.sink { error in
+        viewModel.refreshing.sink { [weak self]  error in
             switch error {
             case .finished:
                 break;
             case .failure(let message):
-                self.showAlert(title: "Error", message: message.localizedDescription,retry: nil) 
+                self?.showAlert(title: "Error", message: message.localizedDescription,retry: nil) 
             }
         } receiveValue: { [weak self] value in
             value == true ? self?.tableViewExercises.refreshControl?.beginRefreshing() : self?.tableViewExercises.refreshControl?.endRefreshing()

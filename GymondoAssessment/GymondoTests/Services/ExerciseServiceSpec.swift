@@ -38,6 +38,7 @@ final class ExerciseServiceSpec: XCTestCase {
 
     private func getExerciseService(file: StaticString = #file, line: UInt = #line) -> MockExerciseService {
         let apiService = MockExerciseService()
+        checkMemoryLeaks(apiService,file: file,line: line)
         return apiService
     }
 }

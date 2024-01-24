@@ -37,11 +37,13 @@ final class ExerciseListViewControllerTests: XCTestCase {
         XCTAssertTrue(exercieCell?.exerciseName == firstExercise?.name)
     }
     
-    func getExcrciseListViewController() -> (ExerciseListViewController,MockExerciseListViewModel) {
+    func getExcrciseListViewController(file: StaticString = #file, line: UInt = #line) -> (ExerciseListViewController,MockExerciseListViewModel) {
         let mockViewModel = MockExerciseListViewModel()
         let excrciseListViewController = GymondoStoryboard.exercise.instantiateViewController(identifier: ExerciseListViewController.storyboardID) { coder in
             return ExerciseListViewController(coder: coder, navigator: MockNavigator(navigationController: UINavigationController()), viewModel: mockViewModel)
         }
+        checkMemoryLeaks(excrciseListViewController,file:file,line: line)
+        checkMemoryLeaks(mockViewModel,file: file,line: line)
         return (excrciseListViewController,mockViewModel)
     }
     

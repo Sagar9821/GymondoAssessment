@@ -144,8 +144,9 @@ final class WebServiceSpec: XCTestCase {
     
     // MARK: - Helpers
     private func getWebService(file: StaticString = #file, line: UInt = #line) -> MockWebService {
-        let sut = MockWebService()
-        return sut
+        let webService = MockWebService()
+        checkMemoryLeaks(webService,file: file,line: line)
+        return webService
     }
 
 }
