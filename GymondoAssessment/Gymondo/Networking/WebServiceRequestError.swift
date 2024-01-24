@@ -44,5 +44,8 @@ public enum WebServiceRequestError: LocalizedError,Equatable {
 }
 
 public struct WebResponseError : Codable{
-    var detail: String
+    public var detail: String
+    public init(detail: String) {
+        self.detail = detail
+    }
 }

@@ -1,0 +1,61 @@
+{
+    "id": 48,
+    "uuid": "67c26c9b-32f3-4b8b-b13a-4d8be4803975",
+    "created": "2023-08-06T10:17:17.422900+02:00",
+    "last_update": "2024-01-17T11:21:28.457117+01:00",
+    "last_update_global": "2024-01-17T11:21:28.462180+01:00",
+    "category": {
+        "id": 8,
+        "name": "Arms"
+    },
+    "muscles": [],
+    "muscles_secondary": [],
+    "equipment": [
+        {
+            "id": 1,
+            "name": "Barbell"
+        },
+        {
+            "id": 8,
+            "name": "Bench"
+        }
+    ],
+    "license": {
+        "id": 2,
+        "full_name": "Creative Commons Attribution Share Alike 4",
+        "short_name": "CC-BY-SA 4",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+    },
+    "license_author": "burenl",
+    "images": [],
+    "exercises": [
+        {
+            "id": 759,
+            "uuid": "95b25f5e-4a01-48f1-a3df-2b7fe8fd624d",
+            "name": "Barbell Reverse Wrist Curl",
+            "exercise_base": 48,
+            "description": "<p>Sitting on a bench, grab a barbell with your palms facing down and your hands shoulder-width apart. Rest your forearms on your thighs and allow your wrists to hang over your knees.</p>\n<p>Curl your knuckles towards your face, lifting the barbell. Pause for a moment in the top position, then slowly return the barbell to the starting position.</p>",
+            "created": "2023-08-06T10:17:17.349574+02:00",
+            "language": 2,
+            "aliases": [],
+            "notes": [],
+            "license": 2,
+            "license_title": "",
+            "license_object_url": "",
+            "license_author": "burenl",
+            "license_author_url": "",
+            "license_derivative_source_url": "",
+            "author_history": [
+                "burenl"
+            ]
+        }
+    ],
+    "variations": 42,
+    "videos": [],
+    "author_history": [
+        "burenl"
+    ],
+    "total_authors_history": [
+        "burenl"
+    ]
+}

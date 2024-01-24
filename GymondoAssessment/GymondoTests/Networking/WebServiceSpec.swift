@@ -55,7 +55,7 @@ final class WebServiceSpec: XCTestCase {
     func test_successWithInvalidData() {
         // Given
         let sut = getWebService()
-        let request = Router.getExercisebaseinfo(limit: 20, offset: 0).asURLRequest()
+        let request = Router.getExercisebaseinfo(limit: 20, offset: 0)
         
         let responseData = "incorrect data".data(using: .utf8)!
         sut.response = Just(responseData)
@@ -77,7 +77,7 @@ final class WebServiceSpec: XCTestCase {
         // Then
         XCTAssertTrue(sut.startFetching)
         XCTAssertEqual(sut.catchRequests.count, 1)
-        XCTAssertEqual(sut.catchRequests[0], request)
+        XCTAssertEqual(sut.catchRequests[0], request.asURLRequest())
         XCTAssertEqual(receivedError, .decodingError(deccodingErrorMessage))
     }
     

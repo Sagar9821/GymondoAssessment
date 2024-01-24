@@ -430,5 +430,245 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95274A20-B5E0-4B38-A70D-A6B13E74AA1B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoAssessmentUITests/ExerciseDetails/ExerciseDetailsScreenUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "test_exerciseList_successful()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95274A20-B5E0-4B38-A70D-A6B13E74AA1B - a62853ec3c747f9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoAssessmentUITests.ExerciseDetailsScreenUITests.test_exerciseList_successful() -&gt; ()"
+                  moduleName = "GymondoAssessmentUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessmentUITests/ExerciseDetails/ExerciseDetailsScreenUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "95274A20-B5E0-4B38-A70D-A6B13E74AA1B - a62853ec3c747f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoAssessmentUITests.ExerciseDetailsScreenUITests.test_exerciseList_successful() -&gt; ()"
+                  moduleName = "GymondoAssessmentUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessmentUITests/ExerciseDetails/ExerciseDetailsScreenUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB52C3FD-77FC-447F-B142-86C411664E94"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoAssessment/Extentions/UIViewController+Extentions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "showAlert(title:message:actions:retry:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FB52C3FD-77FC-447F-B142-86C411664E94 - bda6d522bd0c57dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showAlert(title: Swift.Optional&lt;Swift.String&gt;, message: Swift.String, actions: Swift.Array&lt;__C.UIAlertAction&gt;, retry: Swift.Optional&lt;(__C.UIAlertAction) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "GymondoAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessment/Extentions/UIViewController+Extentions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "FB52C3FD-77FC-447F-B142-86C411664E94 - bda6d522bd0c57dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UIViewController.showAlert(title: Swift.Optional&lt;Swift.String&gt;, message: Swift.String, actions: Swift.Array&lt;__C.UIAlertAction&gt;, retry: Swift.Optional&lt;(__C.UIAlertAction) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "GymondoAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessment/Extentions/UIViewController+Extentions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "696">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96FD1FB7-AF12-4A2E-843A-4D677F0D169E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoAssessment/Sceans/Exercise/ExerciseList/View/ExerciseCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "96FD1FB7-AF12-4A2E-843A-4D677F0D169E - 658e0bfebb967e98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoAssessment.ExerciseCell.loadImage() -&gt; ()"
+                  moduleName = "GymondoAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessment/Sceans/Exercise/ExerciseList/View/ExerciseCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "96FD1FB7-AF12-4A2E-843A-4D677F0D169E - 658e0bfebb967e98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GymondoAssessment.ExerciseCell.loadImage() -&gt; ()"
+                  moduleName = "GymondoAssessment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/psagc/Documents/Assignment/GymondoAssessment/GymondoAssessment/Sceans/Exercise/ExerciseList/View/ExerciseCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4CE5986-D943-4C66-8F68-55DD247F704D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoAssessment/Sceans/Exercise/ExerciseList/View/ExerciseCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "704A6529-18D5-4C3E-9755-AF19DAE4F0A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Gymondo/Models/Exercises.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "mainImage"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29FD76CD-1923-4925-A65A-92423E9927DB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoAssessment/Sceans/Exercise/ExerciseList/ExerciseListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "fetchExercise(refreshing:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCFD6924-0418-46E9-BC14-75C1806A08DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Test Helper/MockWebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetch(type:router:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C9B7EF6-44D5-48EF-8A64-C42F16F3012C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Networking/WebServiceSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "test_successWithInvalidData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B44793CB-BB98-4A02-8EF2-AE8DF091E597"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GymondoTests/Networking/WebServiceSpec.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "test_successWithInvalidData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -1,0 +1,1311 @@
+{
+    "count": 416,
+    "next": "https://wger.de/api/v2/exercisebaseinfo/?limit=20&offset=40",
+    "previous": "https://wger.de/api/v2/exercisebaseinfo/?limit=20",
+    "results": [
+        {
+            "id": 988,
+            "uuid": "7ce489d2-1948-46de-aa80-277b2ca737aa",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:39.253498+01:00",
+            "last_update_global": "2024-01-17T11:21:41.272504+01:00",
+            "category": {
+                "id": 9,
+                "name": "Legs"
+            },
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 7,
+                    "name": "none (bodyweight exercise)"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": null,
+            "images": [
+                {
+                    "id": 383,
+                    "uuid": "6283b258-a4d7-4833-84f7-a38987022d3d",
+                    "exercise_base": 988,
+                    "exercise_base_uuid": "7ce489d2-1948-46de-aa80-277b2ca737aa",
+                    "image": "https://wger.de/media/exercise-images/988/6283b258-a4d7-4833-84f7-a38987022d3d.png",
+                    "is_main": true,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                }
+            ],
+            "exercises": [
+                {
+                    "id": 1605,
+                    "uuid": "f4daa399-c870-4488-af91-4a81368a0220",
+                    "name": "Bugarski podijeljeni čučanj lijevo",
+                    "exercise_base": 988,
+                    "description": "",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 22,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Milo Ivir (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1607,
+                    "uuid": "06b6b320-b7dd-42d5-9cc4-a2e0456aca9d",
+                    "name": "Bulgaarse gespleten hurkzit (links)",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Pak een stoel en ga er recht voor staan. Plaats het voorste deel van je voet op de stoel.</li><li>Buig de voorste knie en balanceer je armen totdat de achterste knie bijna de grond raakt.</li><li>Duw jezelf terug, ga terug naar stap 1 en herhaal, telkens met een andere knie.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 6,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "mondstern (imported from Feeel)",
+                        "J. Lavoie (imported from Feeel)",
+                        "Heimen Stoffels (imported from Feeel)",
+                        "Daan Vervacke (imported from Feeel)",
+                        "floris van den bosch (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1609,
+                    "uuid": "25d8098b-2886-4b2b-b061-f3d9593d6a45",
+                    "name": "Bulgar tek bacaklı çömelmesi (sol)",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Bir sandalyenin önünde dik durun ve büyük bir adım atın. Ayaklarınızdan birinin üst kısmını sandalyenin üzerine koyun.</li><li>Arka diz neredeyse yere değene kadar kollarla dengeleyerek ön dizinizi bükün</li><li>Başlangıç durumuna geri itin ve tekrarlayın.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 16,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Oğuz Ersen (imported from Feeel)",
+                        "ToldYouThat (imported from Feeel)",
+                        "mondstern (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1608,
+                    "uuid": "8ed2f62b-2179-4f55-acbd-e56e41916fb8",
+                    "name": "Bulgarian split squats esquerda",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Fique de pé em frente a uma cadeira e dê um grande passo. Coloque a parte superior de um de seus pés sobre a cadeira.</li><li>Dobre o joelho da frente, equilibrando-se com os braços até que o joelho de trás quase toque o chão</li><li>Empurre de volta para a posição inicial e repita.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 7,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "mondstern (imported from Feeel)",
+                        "Eduardo Celino (imported from Feeel)",
+                        "flexagoon (imported from Feeel)",
+                        "Vinicius Rodrigues (imported from Feeel)",
+                        "Rodolfo Candido (imported from Feeel)",
+                        "gbpu (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1602,
+                    "uuid": "2af89abc-2842-4267-9460-090625dd2abd",
+                    "name": "Bulgarian split squats left",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Stand tall in front of a chair and take a large step. Put the upper part of one of your feet on the chair.</li><li>Bend the front knee, balancing with arms until the back knee almost touches the ground.</li><li>Push back to the starting position and repeat.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Miroslav Mazel (imported from Feeel)",
+                        "paolo.dev (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1601,
+                    "uuid": "dbb7a4ba-b1dc-45e3-8dcb-563290d36151",
+                    "name": "Bulgarische geteilte Kniebeugen links",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Stelle Dich aufrecht vor einen Stuhl und machen einen großen Schritt. Stelle den oberen Teil einer Deiner Füße auf den Stuhl.</li><li>Beuge das vordere Knie und balanciere mit den Armen, bis das hintere Knie fast den Boden berührt</li><li>Gehe in die Ausgangsposition zurück und wiederhole.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 1,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Miroslav Mazel (imported from Feeel)",
+                        "mondstern (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1600,
+                    "uuid": "0b7331cc-396b-4440-a0fe-aca22bc31071",
+                    "name": "Bulharské dřepy na levé noze",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Postavte se vysoko před židli a udělejte velký krok. Položte horní část jedné z vašich nohou na židli.</li><li>Ohněte přední koleno a vyvažujte rukama, dokud se zadní koleno téměř nedotkne země</li><li>Zatlačte zpět do výchozí polohy a opakujte.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 9,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Miroslav Mazel (imported from Feeel)",
+                        "Shimon (imported from Feeel)",
+                        "mondstern (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1603,
+                    "uuid": "596eb8f7-8c69-4c24-87da-5701b150c8e7",
+                    "name": "Sentadilla búlgara izquierda",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Póngase de pie delante de una silla y dé un largo paso. Ponga la parte superior de uno de sus pies en la silla</li><li>Doble la rodilla delantera, balanceando los brazos hasta que la rodilla trasera casi toque el suelo.</li><li>Empuje hacia atrás a la posición inicial y repita.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 4,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Diego Sanguinetti (imported from Feeel)",
+                        "Luis Alfredo Figueroa Bracamontes (imported from Feeel)",
+                        "Gabriel Tandil (imported from Feeel)",
+                        "mondstern (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1606,
+                    "uuid": "aebdddd6-e34e-4f5e-bed8-93ba7988b9a2",
+                    "name": "Split squats left bulgari",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Mettiti di fronte a una sedia e fai un grande passo. Metti la parte superiore di uno dei tuoi piedi sulla sedia.</li><li>Piegare il ginocchio anteriore, bilanciandosi con le braccia fino a quando il ginocchio posteriore tocca quasi il suolo</li><li>Spingi indietro fino alla posizione di partenza e ripeti.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 13,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "mondstern (imported from Feeel)",
+                        "J. Lavoie (imported from Feeel)",
+                        "albanobattistella (imported from Feeel)",
+                        "Marco Galli (imported from Feeel)",
+                        "Gianluca Vespignani (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1599,
+                    "uuid": "61279e28-22ef-445a-8997-4909edde7673",
+                    "name": "Squat split Bulgaria ke kiri",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Berdiri tegak di depan kursi dan mengambil langkah besar. Taruh bagian atas salah satu kakimu di kursi.</li><li>Tekuk lutut depan, menyeimbangkan dengan tangan sampai lutut belakang hampir menyentuh tanah</li><li>Dorong kembali ke posisi awal dan ulangi.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 23,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Reza Almanda (imported from Feeel)",
+                        "mondstern (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1604,
+                    "uuid": "cf6368d3-12e3-454a-927e-9e47ec48b2c1",
+                    "name": "Squats bulgares gauches",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Tenez-vous droit devant une chaise et faites un grand pas. Placez la partie supérieure de l'un de vos pieds sur la chaise</li><li>Pliez le genou avant, en équilibre avec les bras jusqu'à ce que le genou arrière touche presque le sol</li><li>Revenez à la position de départ et répétez.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 12,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "mondstern (imported from Feeel)",
+                        "Maxime Leroy (imported from Feeel)",
+                        "Jonathan D. (imported from Feeel)",
+                        "J. Lavoie (imported from Feeel)",
+                        "Miroslav Mazel (imported from Feeel)",
+                        "Clément Mondon (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1610,
+                    "uuid": "0e44f620-3a43-464a-9529-300b4b75b1b9",
+                    "name": "Βουλγαρικά σπαστά καθίσματα αριστερά",
+                    "exercise_base": 988,
+                    "description": "<ol><li>Σταθείτε όρθιοι μπροστά από μια καρέκλα και κάντε ένα μεγάλο βήμα. Τοποθετήστε το πάνω μέρος του ενός ποδιού σας στην καρέκλα.</li><li>Λυγίστε το μπροστινό γόνατο, ισορροπώντας με τα χέρια μέχρι το πίσω γόνατο να ακουμπήσει σχεδόν στο έδαφος</li><li>Σπρώξτε πίσω στη θέση εκκίνησης και επαναλάβετε.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 8,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Vangelis Skarmoutsos (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1611,
+                    "uuid": "ec9cea3d-04ab-43fd-823a-450bcc53d25f",
+                    "name": "الرفع القرفصاء البلغارية",
+                    "exercise_base": 988,
+                    "description": "<ol><li>قف منتصبًا أمام كرسي وخذ خطوة كبيرة. ضع الجزء العلوي من إحدى قدميك على الكرسي.</li><li>ثني الركبة الأمامية ، مع موازنة الذراعين حتى تكاد الركبة الخلفية تلامس الأرض</li><li>ادفع للخلف إلى وضع البداية وكرر العملية.</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 17,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Rex_sa (imported from Feeel)"
+                    ]
+                },
+                {
+                    "id": 1612,
+                    "uuid": "feddbd14-a5d0-47d8-94c0-79cab8407011",
+                    "name": "左保加利亚分腿蹲",
+                    "exercise_base": 988,
+                    "description": "<ol><li>在椅子前站直，迈出一大步。将另一只脚的脚背放在椅子上。</li><li>弯曲前膝，用手臂保持平衡，直到后膝几乎接触地面。</li><li>撑回起始位置并重复。</li></ol>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 24,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Eric (imported from Feeel)",
+                        "poi / poipoipoipoipoipoipoipoipoi (imported from Feeel)",
+                        "bxezi (imported from Feeel)"
+                    ]
+                }
+            ],
+            "variations": 48,
+            "videos": [],
+            "author_history": [],
+            "total_authors_history": [
+                "Milo Ivir (imported from Feeel)",
+                "Eduardo Celino (imported from Feeel)",
+                "Gianluca Vespignani (imported from Feeel)",
+                "ToldYouThat (imported from Feeel)",
+                "Maxime Leroy (imported from Feeel)",
+                "Franpol",
+                "flexagoon (imported from Feeel)",
+                "Vinicius Rodrigues (imported from Feeel)",
+                "Luis Alfredo Figueroa Bracamontes (imported from Feeel)",
+                "Jonathan D. (imported from Feeel)",
+                "albanobattistella (imported from Feeel)",
+                "Marco Galli (imported from Feeel)",
+                "Heimen Stoffels (imported from Feeel)",
+                "Daan Vervacke (imported from Feeel)",
+                "mondstern (imported from Feeel)",
+                "Diego Sanguinetti (imported from Feeel)",
+                "J. Lavoie (imported from Feeel)",
+                "Rodolfo Candido (imported from Feeel)",
+                "gbpu (imported from Feeel)",
+                "Vangelis Skarmoutsos (imported from Feeel)",
+                "Clément Mondon (imported from Feeel)",
+                "Oğuz Ersen (imported from Feeel)",
+                "Shimon (imported from Feeel)",
+                "Gabriel Tandil (imported from Feeel)",
+                "Rex_sa (imported from Feeel)",
+                "Eric (imported from Feeel)",
+                "paolo.dev (imported from Feeel)",
+                "Reza Almanda (imported from Feeel)",
+                "poi / poipoipoipoipoipoipoipoipoi (imported from Feeel)",
+                "bxezi (imported from Feeel)",
+                "Miroslav Mazel (imported from Feeel)",
+                "floris van den bosch (imported from Feeel)"
+            ]
+        },
+        {
+            "id": 805,
+            "uuid": "ea63d85c-8579-4dda-b99f-c4c8930f9af6",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:03.018786+01:00",
+            "last_update_global": "2024-01-17T11:21:03.911310+01:00",
+            "category": {
+                "id": 8,
+                "name": "Arms"
+            },
+            "muscles": [
+                {
+                    "id": 5,
+                    "name": "Triceps brachii",
+                    "name_en": "Triceps",
+                    "is_front": false,
+                    "image_url_main": "/static/images/muscles/main/muscle-5.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-5.svg"
+                }
+            ],
+            "muscles_secondary": [],
+            "equipment": [],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "cshep442",
+            "images": [
+                {
+                    "id": 362,
+                    "uuid": "ba006cae-44ca-46a9-bb71-6f5d4fa130e9",
+                    "exercise_base": 805,
+                    "exercise_base_uuid": "ea63d85c-8579-4dda-b99f-c4c8930f9af6",
+                    "image": "https://wger.de/media/exercise-images/805/ba006cae-44ca-46a9-bb71-6f5d4fa130e9.png",
+                    "is_main": true,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                }
+            ],
+            "exercises": [
+                {
+                    "id": 2081,
+                    "uuid": "7460a7bc-4490-46aa-a4bb-883ab22ef171",
+                    "name": "Empuje de tríceps en cable",
+                    "exercise_base": 805,
+                    "description": "El empuje hacia abajo de la cuerda del cable es un ejercicio popular dirigido a los músculos tríceps. Es fácil de aprender y realizar, lo que lo convierte en el favorito de todos, desde principiantes hasta levantadores avanzados. Por lo general, se realiza para repeticiones de moderadas a altas, como 8-12 repeticiones o más por serie, como parte de un entrenamiento centrado en la parte superior del cuerpo o en los brazos.",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 4,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "cshep442",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol",
+                        "cshep442"
+                    ]
+                },
+                {
+                    "id": 1073,
+                    "uuid": "51595d74-afe2-4445-88ec-2a289251e710",
+                    "name": "Tricep Pushdown on Cable",
+                    "exercise_base": 805,
+                    "description": "The cable rope push-down is a popular exercise targeting the triceps muscles. It's easy to learn and perform, making it a favorite for everyone from beginners to advanced lifters. It is usually performed for moderate to high reps, such as 8-12 reps or more per set, as part of an upper-body or arm-focused workout.",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "cshep442",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "cshep442"
+                    ]
+                }
+            ],
+            "variations": null,
+            "videos": [],
+            "author_history": [
+                "cshep442"
+            ],
+            "total_authors_history": [
+                "Franpol",
+                "cshep442"
+            ]
+        },
+        {
+            "id": 20,
+            "uuid": "f24cb758-9c0d-42d4-ad9e-6025c527dd13",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:19.366287+01:00",
+            "last_update_global": "2024-01-17T11:21:20.670600+01:00",
+            "category": {
+                "id": 13,
+                "name": "Shoulders"
+            },
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 3,
+                    "name": "Dumbbell"
+                }
+            ],
+            "license": {
+                "id": 1,
+                "full_name": " Creative Commons Attribution Share Alike 3",
+                "short_name": "CC-BY-SA 3",
+                "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+            },
+            "license_author": "trzr23",
+            "images": [],
+            "exercises": [
+                {
+                    "id": 228,
+                    "uuid": "880bff63-6798-4ffc-a818-b2a1ccfec0f7",
+                    "name": "Arnold Press",
+                    "exercise_base": 20,
+                    "description": "<p>Zwei Kurzhanteln mit den Handflächen nach innen vor der Brust halten, Ellbogen unterhalb der Handgelenke.</p>\n<p>Ellbogen nach außen bringen und Hanteln über den Kopf heben. Drehung kommt aus dem Ellbogen, nicht aus den Armen!</p>\n<p>Wenn die Arme durchgestreckt sind, die gleiche Bewegung rückwärts ausführen.</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 1,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 1,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "trzr23",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "trzr23",
+                        "bloody_disgrace"
+                    ]
+                },
+                {
+                    "id": 227,
+                    "uuid": "53ca25b3-61d9-4f72-bfdb-492b83484ff5",
+                    "name": "Arnold Shoulder Press",
+                    "exercise_base": 20,
+                    "description": "<p>Very common shoulder exercise.</p>\n<p> </p>\n<p>As shown here: https://www.youtube.com/watch?v=vj2w851ZHRM</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 1,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "trzr23",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "trzr23"
+                    ]
+                }
+            ],
+            "variations": 5,
+            "videos": [],
+            "author_history": [
+                "trzr23"
+            ],
+            "total_authors_history": [
+                "trzr23",
+                "bloody_disgrace"
+            ]
+        },
+        {
+            "id": 43,
+            "uuid": "dae6f6ed-9408-4e62-a59a-1a33f4e8ab36",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:22.060814+01:00",
+            "last_update_global": "2024-01-17T11:21:22.066739+01:00",
+            "category": {
+                "id": 9,
+                "name": "Legs"
+            },
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "BePieToday",
+            "images": [],
+            "exercises": [
+                {
+                    "id": 407,
+                    "uuid": "1215dad0-b7e0-42c6-80d4-112f69acb68a",
+                    "name": "Barbell Hack Squats",
+                    "exercise_base": 43,
+                    "description": "<p>Perform leg squats with barbell behind your legs</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "BePieToday",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "BePieToday"
+                    ]
+                }
+            ],
+            "variations": 12,
+            "videos": [],
+            "author_history": [
+                "BePieToday"
+            ],
+            "total_authors_history": [
+                "BePieToday"
+            ]
+        },
+        {
+            "id": 801,
+            "uuid": "68e5eae7-7fd0-4d69-9b50-d0df15feac91",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:22.483187+01:00",
+            "last_update_global": "2024-01-17T11:21:22.532508+01:00",
+            "category": {
+                "id": 11,
+                "name": "Chest"
+            },
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 3,
+                    "name": "Dumbbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": null,
+            "images": [],
+            "exercises": [
+                {
+                    "id": 896,
+                    "uuid": "ae308b2f-ceb2-4517-93b8-3b90f37fad47",
+                    "name": "Dumbbell Push-Up",
+                    "exercise_base": 801,
+                    "description": "<p>Normal Push-ups on Dumbbells, this brings a further range of movement</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "M123"
+                    ]
+                },
+                {
+                    "id": 1251,
+                    "uuid": "6ae16b62-2006-418c-ad2a-c76605ffd0ef",
+                    "name": "Piegamenti con manubri",
+                    "exercise_base": 801,
+                    "description": "Normali flessioni sui manubri, questo porta un'ulteriore gamma di movimento",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 13,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "clafal"
+                    ]
+                }
+            ],
+            "variations": 8,
+            "videos": [],
+            "author_history": [],
+            "total_authors_history": [
+                "M123",
+                "clafal"
+            ]
+        },
+        {
+            "id": 12,
+            "uuid": "53906cd1-61f1-4d56-ac60-e4fcc5824861",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:22.580911+01:00",
+            "last_update_global": "2024-01-17T11:21:23.437823+01:00",
+            "category": {
+                "id": 9,
+                "name": "Legs"
+            },
+            "muscles": [
+                {
+                    "id": 8,
+                    "name": "Gluteus maximus",
+                    "name_en": "Glutes",
+                    "is_front": false,
+                    "image_url_main": "/static/images/muscles/main/muscle-8.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-8.svg"
+                }
+            ],
+            "muscles_secondary": [],
+            "equipment": [],
+            "license": {
+                "id": 1,
+                "full_name": " Creative Commons Attribution Share Alike 3",
+                "short_name": "CC-BY-SA 3",
+                "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
+            },
+            "license_author": "flori",
+            "images": [],
+            "exercises": [
+                {
+                    "id": 174,
+                    "uuid": "99881bdd-43d7-4c3b-82ed-9c187d0455b7",
+                    "name": "Abduktoren-Maschine",
+                    "exercise_base": 12,
+                    "description": "<ul>\n<li>in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind</li>\n<li>den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen</li>\n<li>mit den Händen an den Griffen festhalten</li>\n<li>die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken</li>\n<li>danach die Beine wieder zusammen führen</li>\n<li>das Gesäß nicht vom Sitz abheben</li>\n<li>beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatmen</li>\n</ul>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 1,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 1,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "flori",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "flori"
+                    ]
+                },
+                {
+                    "id": 377,
+                    "uuid": "4b3025a9-b717-4577-9e92-b1c200fe5f1c",
+                    "name": "Seated Hip Adduction",
+                    "exercise_base": 12,
+                    "description": "",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 1,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "flori",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Araaosf",
+                        "flori"
+                    ]
+                }
+            ],
+            "variations": null,
+            "videos": [
+                {
+                    "id": 74,
+                    "uuid": "5148c579-5df2-4618-9a7b-a2e29ac4dd7d",
+                    "exercise_base": 12,
+                    "video": "https://wger.de/media/exercise-video/12/5148c579-5df2-4618-9a7b-a2e29ac4dd7d.MOV",
+                    "is_main": false,
+                    "size": 60138928,
+                    "duration": "20.86",
+                    "width": 1920,
+                    "height": 1080,
+                    "codec": "hevc",
+                    "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Goulart",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Goulart"
+                    ]
+                }
+            ],
+            "author_history": [
+                "flori"
+            ],
+            "total_authors_history": [
+                "Goulart",
+                "flori",
+                "Araaosf"
+            ]
+        },
+        {
+            "id": 46,
+            "uuid": "04e7d7e4-f8d2-406d-97df-3df3bceec22c",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:24.281782+01:00",
+            "last_update_global": "2024-01-17T11:21:24.817303+01:00",
+            "category": {
+                "id": 9,
+                "name": "Legs"
+            },
+            "muscles": [
+                {
+                    "id": 10,
+                    "name": "Quadriceps femoris",
+                    "name_en": "Quads",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-10.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-10.svg"
+                }
+            ],
+            "muscles_secondary": [
+                {
+                    "id": 8,
+                    "name": "Gluteus maximus",
+                    "name_en": "Glutes",
+                    "is_front": false,
+                    "image_url_main": "/static/images/muscles/main/muscle-8.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-8.svg"
+                }
+            ],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "Mikko Ruohola",
+            "images": [],
+            "exercises": [
+                {
+                    "id": 405,
+                    "uuid": "ae6a6c23-4616-49b7-a152-49d7461c2b7f",
+                    "name": "Barbell Lunges Standing",
+                    "exercise_base": 46,
+                    "description": "<p>Put barbell on the back of your shoulders. Stand upright, then take the first step forward. Step should bring you forward so that your supporting legs knee can touch the floor. Then stand back up and repeat with the other leg.</p>\n<p>Remember to keep good posture.</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Mikko Ruohola",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Mikko Ruohola"
+                    ]
+                },
+                {
+                    "id": 2068,
+                    "uuid": "0567f315-8751-4280-ad5d-c5f2f1584756",
+                    "name": "Wykroki ze sztangą",
+                    "exercise_base": 46,
+                    "description": "Połóż sztangę z tyłu barków. Stań prosto, a następnie wykonaj krok do przodu. Krok powinien doprowadzić cię do pozycji, w taki sposób aby kolanem nogi zakrocznej dotknąć podłogi.(Dotknięcie ma być delikatne z pełna kontrolą) Następnie wstań i powtórz z drugą nogą.\n\nPamiętaj o zachowaniu dobrej postawy.",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 14,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Mikko Ruohola",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "wampir5000",
+                        "Mikko Ruohola"
+                    ]
+                }
+            ],
+            "variations": 13,
+            "videos": [
+                {
+                    "id": 29,
+                    "uuid": "200d9889-322f-476a-a47b-f15a1a97934a",
+                    "exercise_base": 46,
+                    "video": "https://wger.de/media/exercise-video/46/200d9889-322f-476a-a47b-f15a1a97934a.MOV",
+                    "is_main": false,
+                    "size": 42120832,
+                    "duration": "12.99",
+                    "width": 1920,
+                    "height": 1080,
+                    "codec": "hevc",
+                    "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Goulart",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Goulart"
+                    ]
+                },
+                {
+                    "id": 30,
+                    "uuid": "d45df7af-586b-42d0-bc56-d1e028812f12",
+                    "exercise_base": 46,
+                    "video": "https://wger.de/media/exercise-video/46/d45df7af-586b-42d0-bc56-d1e028812f12.MOV",
+                    "is_main": false,
+                    "size": 23571954,
+                    "duration": "8.09",
+                    "width": 1920,
+                    "height": 1080,
+                    "codec": "hevc",
+                    "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Goulart",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Goulart"
+                    ]
+                }
+            ],
+            "author_history": [
+                "Mikko Ruohola"
+            ],
+            "total_authors_history": [
+                "wampir5000",
+                "Goulart",
+                "Mikko Ruohola"
+            ]
+        },
+        {
+            "id": 802,
+            "uuid": "072a9fa8-1028-47b3-b958-d8052c6b8661",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:25.268564+01:00",
+            "last_update_global": "2024-01-17T11:21:25.275515+01:00",
+            "category": {
+                "id": 9,
+                "name": "Legs"
+            },
+            "muscles": [],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": null,
+            "images": [],
+            "exercises": [
+                {
+                    "id": 1053,
+                    "uuid": "b368663d-f71f-4689-b462-76ac86a06362",
+                    "name": "Barbell Lunges Walking",
+                    "exercise_base": 802,
+                    "description": "",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": null,
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "wger.de"
+                    ]
+                }
+            ],
+            "variations": 13,
+            "videos": [
+                {
+                    "id": 34,
+                    "uuid": "85d1d7f8-c3c5-47e8-9b26-56896919e6e7",
+                    "exercise_base": 802,
+                    "video": "https://wger.de/media/exercise-video/802/85d1d7f8-c3c5-47e8-9b26-56896919e6e7.MOV",
+                    "is_main": false,
+                    "size": 23668353,
+                    "duration": "12.72",
+                    "width": 1920,
+                    "height": 1080,
+                    "codec": "hevc",
+                    "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Goulart",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Goulart"
+                    ]
+                }
+            ],
+            "author_history": [],
+            "total_authors_history": [
+                "Goulart",
+                "wger.de"
+            ]
+        },
+        {
+            "id": 41,
+            "uuid": "a6bced3c-72f5-42a3-9438-5569d46f49fd",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:25.329270+01:00",
+            "last_update_global": "2024-01-17T11:21:25.337075+01:00",
+            "category": {
+                "id": 10,
+                "name": "Abs"
+            },
+            "muscles": [
+                {
+                    "id": 14,
+                    "name": "Obliquus externus abdominis",
+                    "name_en": "",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-14.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-14.svg"
+                }
+            ],
+            "muscles_secondary": [],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "sevae",
+            "images": [],
+            "exercises": [
+                {
+                    "id": 343,
+                    "uuid": "1b9dc5bc-790b-4e21-a55d-f8b3115e94c5",
+                    "name": "Barbell Ab Rollout",
+                    "exercise_base": 41,
+                    "description": "<p>Place a barbell on the floor at your feet.</p>\n<p>Bending at the waist, grip the barbell with a shoulder with overhand grip.</p>\n<p>With a slow controlled motion, roll the bar out so that your back is straight.</p>\n<p>Roll back up raising your hips and butt as you return to the starting position.</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "sevae",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "sevae"
+                    ]
+                }
+            ],
+            "variations": null,
+            "videos": [],
+            "author_history": [
+                "sevae"
+            ],
+            "total_authors_history": [
+                "sevae"
+            ]
+        },
+        {
+            "id": 50,
+            "uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+            "created": "2023-08-06T10:17:17.422900+02:00",
+            "last_update": "2024-01-17T11:21:25.771722+01:00",
+            "last_update_global": "2024-01-17T11:21:27.495874+01:00",
+            "category": {
+                "id": 8,
+                "name": "Arms"
+            },
+            "muscles": [
+                {
+                    "id": 5,
+                    "name": "Triceps brachii",
+                    "name_en": "Triceps",
+                    "is_front": false,
+                    "image_url_main": "/static/images/muscles/main/muscle-5.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-5.svg"
+                }
+            ],
+            "muscles_secondary": [
+                {
+                    "id": 2,
+                    "name": "Anterior deltoid",
+                    "name_en": "Shoulders",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-2.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-2.svg"
+                },
+                {
+                    "id": 4,
+                    "name": "Pectoralis major",
+                    "name_en": "Chest",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-4.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-4.svg"
+                }
+            ],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "sevae",
+            "images": [
+                {
+                    "id": 359,
+                    "uuid": "695ced5c-9961-4076-add2-cb250d01089e",
+                    "exercise_base": 50,
+                    "exercise_base_uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+                    "image": "https://wger.de/media/exercise-images/50/695ced5c-9961-4076-add2-cb250d01089e.png",
+                    "is_main": true,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                },
+                {
+                    "id": 360,
+                    "uuid": "44cf2c72-a78a-4d5e-a8b5-a02c6ea61fb4",
+                    "exercise_base": 50,
+                    "exercise_base_uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+                    "image": "https://wger.de/media/exercise-images/50/44cf2c72-a78a-4d5e-a8b5-a02c6ea61fb4.jpg",
+                    "is_main": false,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                },
+                {
+                    "id": 361,
+                    "uuid": "60c68ac5-70c7-4ed6-bfc1-99bed63a472a",
+                    "exercise_base": 50,
+                    "exercise_base_uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+                    "image": "https://wger.de/media/exercise-images/50/60c68ac5-70c7-4ed6-bfc1-99bed63a472a.jpg",
+                    "is_main": false,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                },
+                {
+                    "id": 366,
+                    "uuid": "69b519d8-4861-4bb1-b504-3887aa30e7d8",
+                    "exercise_base": 50,
+                    "exercise_base_uuid": "13234b53-ea0c-41f1-9069-776865ea8eff",
+                    "image": "https://wger.de/media/exercise-images/50/69b519d8-4861-4bb1-b504-3887aa30e7d8.png",
+                    "is_main": false,
+                    "style": "4",
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "Franpol",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol"
+                    ]
+                }
+            ],
+            "exercises": [
+                {
+                    "id": 344,
+                    "uuid": "2cd5e256-20a7-4bc8-a7a8-d62bf8ce00cf",
+                    "name": "Barbell Triceps Extension",
+                    "exercise_base": 50,
+                    "description": "<p>Position barbell overhead with narrow overhand grip.</p>\n<p>Lower forearm behind upper arm with elbows remaining overhead. Extend forearm overhead. Lower and repeat.</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 2,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "sevae",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "sevae"
+                    ]
+                },
+                {
+                    "id": 2080,
+                    "uuid": "10d5044e-d334-4a8c-9c4b-5998132b338a",
+                    "name": "Extensión de triceps",
+                    "exercise_base": 50,
+                    "description": "Coloque la barra sobre la cabeza con un agarre en pronación estrecho. Baje el antebrazo detrás de la parte superior del brazo con los codos sobre la cabeza. Extienda el antebrazo por encima de la cabeza. Baja y repite.",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 4,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "sevae",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "Franpol",
+                        "sevae"
+                    ]
+                },
+                {
+                    "id": 45,
+                    "uuid": "1f255866-ea06-45fa-9183-03e9ea6c0ec1",
+                    "name": "Trizepsdrücken KH Über Kopf",
+                    "exercise_base": 50,
+                    "description": "<p>Setze dich auf eine Bank und nehme eine Kurzhantel in die Hand. Strecke den Arm fast vollständig aus und lasse nun das Gewicht langsam bis hinter dem Kopf herunter. Während der Übung darf nur der Trizeps die Arbeit machen, achte darauf, dass sich die Ellenbogen nicht bewegen. Zur Stabilisierung kannst du den freien Arm nehmen.</p>",
+                    "created": "2023-08-06T10:17:17.349574+02:00",
+                    "language": 1,
+                    "aliases": [],
+                    "notes": [],
+                    "license": 2,
+                    "license_title": "",
+                    "license_object_url": "",
+                    "license_author": "sevae",
+                    "license_author_url": "",
+                    "license_derivative_source_url": "",
+                    "author_history": [
+                        "wger.de",
+                        "sevae"
+                    ]
+                }
+            ],
+            "variations": 17,
+            "videos": [],
+            "author_history": [
+                "sevae"
+            ],
+            "total_authors_history": [
+                "Franpol",
+                "wger.de",
+                "sevae"
+            ]
+        }
+    ]
+}

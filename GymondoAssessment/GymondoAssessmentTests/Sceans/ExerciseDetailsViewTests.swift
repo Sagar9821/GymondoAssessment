@@ -12,7 +12,7 @@ import Combine
 
 final class ExerciseDetailsViewTests: XCTestCase {
 
-    func test_exercise_titleName() {
+    @MainActor func test_exercise_titleName() {
         let (view, viewModel, service) = getExerciseDetailsView()
         service.mockedResponseExerciseDetails = Just(exerciseDetails)
             .setFailureType(to: WebServiceRequestError.self)

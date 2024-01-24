@@ -10,7 +10,7 @@ import Gymondo
 import SwiftUI
 
 public enum UserFlowEntryPoint {
-     case exerciseList
+    case exerciseList
 }
 
 public protocol NavigatorType {
@@ -31,7 +31,12 @@ class Navigator: NavigatorType {
         switch entrypoint {
         case .exerciseList:
             let storyboard = GymondoStoryboard.exercise
-            let exerciseService: ExerciseService = ExerciseService()
+            let exerciseService: ExerciseServiceType
+            if UITestingHelper.isUITesting {
+                exerciseService = MockExerciseService()
+            } else {
+                exerciseService = ExerciseService()
+            }
             let viewModel = ExerciseListViewModel(excerciseServices: exerciseService)
             let viewController = storyboard.instantiateViewController(identifier: ExerciseListViewController.storyboardID) { coder in
                 return ExerciseListViewController(coder: coder, navigator: self, viewModel: viewModel)
@@ -43,7 +48,13 @@ class Navigator: NavigatorType {
     func navigate(to destination: Destinations) {
         switch destination {
         case .exerciseDetails(let exercise):
-            let exerciseService: ExerciseService = ExerciseService()
+            let exerciseService: ExerciseServiceType
+            if UITestingHelper.isUITesting {
+                exerciseService = MockExerciseService()
+            } else {
+                exerciseService = ExerciseService()
+            }
+            let viewModel = ExerciseListViewModel(excerciseServices: exerciseService)
             let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
             let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel, navigator: self)
             let hostingVc = UIHostingController(rootView: exerciseDetailsView)

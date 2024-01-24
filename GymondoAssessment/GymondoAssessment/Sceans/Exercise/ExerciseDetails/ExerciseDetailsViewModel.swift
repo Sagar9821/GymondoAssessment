@@ -35,6 +35,7 @@ public class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewMode
         self.exerciseService = exerciseService
     }
     
+    @MainActor
     public func getExerciseVariations() {
         
         if let variations = exercises.variations {
