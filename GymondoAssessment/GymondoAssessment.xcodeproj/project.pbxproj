@@ -192,6 +192,7 @@
 		6E50CC202B5EB48C0031187D /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		6E5535C62B615C40005CE554 /* ExerciseDetailsScreenFailureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsScreenFailureUITests.swift; sourceTree = "<group>"; };
 		6E5535C82B61850C005CE554 /* Gymondo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gymondo.xctestplan; sourceTree = "<group>"; };
+		6E5535D52B6190A3005CE554 /* GymondoAssessment.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GymondoAssessment.xctestplan; sourceTree = "<group>"; };
 		6E56A13E2B5AA06E0056B7FA /* ExerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseService.swift; sourceTree = "<group>"; };
 		6E56A1412B5AAF270056B7FA /* MockExcerciseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExcerciseService.swift; sourceTree = "<group>"; };
 		6E56A1432B5AAFE70056B7FA /* ExerciseServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseServiceSpec.swift; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 		6E4D826F2B5A5A9900BB063D = {
 			isa = PBXGroup;
 			children = (
+				6E5535D52B6190A3005CE554 /* GymondoAssessment.xctestplan */,
 				6E5535C82B61850C005CE554 /* Gymondo.xctestplan */,
 				6E4D827A2B5A5A9A00BB063D /* GymondoAssessment */,
 				6E4D82DE2B5A5E8600BB063D /* GymondoAssessmentTests */,
