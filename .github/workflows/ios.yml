@@ -23,4 +23,5 @@ jobs:
       run: /usr/bin/xcodebuild -version
     
     - name: Build and test
-      run: xcodebuild clean build test -project GymondoAssessment/GymondoAssessment.xcodeproj -scheme "GymondoAssessment" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=17.0" ONLY_ACTIVE_ARCH=YES
+      run: xcodebuild clean build test -project GymondoAssessment/GymondoAssessment.xcodeproj -scheme "Gymondo" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=17.0" ONLY_ACTIVE_ARCH=YES
+
