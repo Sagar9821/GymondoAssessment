@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "38290BA4-AEC4-4628-9520-6EE7582E1111",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:GymondoAssessment.xcodeproj",
+          "identifier" : "6E4D82772B5A5A9A00BB063D",
+          "name" : "GymondoAssessment"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GymondoAssessment.xcodeproj",
+        "identifier" : "6E4D82DC2B5A5E8600BB063D",
+        "name" : "GymondoAssessmentTests"
+      }
+    }
+  ],
+  "version" : 1
+}
