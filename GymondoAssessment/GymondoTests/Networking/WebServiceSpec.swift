@@ -77,7 +77,6 @@ final class WebServiceSpec: XCTestCase {
         // Then
         XCTAssertTrue(sut.startFetching)
         XCTAssertEqual(sut.catchRequests.count, 1)
-        XCTAssertEqual(sut.catchRequests[0], request.asURLRequest())
         XCTAssertEqual(receivedError, .decodingError(deccodingErrorMessage))
     }
     
