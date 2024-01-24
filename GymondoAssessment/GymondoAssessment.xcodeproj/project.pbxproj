@@ -25,6 +25,8 @@
 		6E4D83292B5A713F00BB063D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D83282B5A713F00BB063D /* APIRouter.swift */; };
 		6E4D832B2B5A738600BB063D /* RouterEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */; };
 		6E4D832D2B5A75EA00BB063D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4D832C2B5A75EA00BB063D /* Environment.swift */; };
+		6E4F82A92B619DB70016F6D9 /* XCTestCase+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F82A82B619DB70016F6D9 /* XCTestCase+Helper.swift */; };
+		6E4F82AA2B619E920016F6D9 /* XCTestCase+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F82A82B619DB70016F6D9 /* XCTestCase+Helper.swift */; };
 		6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */; };
 		6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */; };
 		6E5089A12B5FF05600847CDA /* ExerciseDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */; };
@@ -180,6 +182,7 @@
 		6E4D83282B5A713F00BB063D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		6E4D832A2B5A738600BB063D /* RouterEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterEndpoints.swift; sourceTree = "<group>"; };
 		6E4D832C2B5A75EA00BB063D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		6E4F82A82B619DB70016F6D9 /* XCTestCase+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helper.swift"; sourceTree = "<group>"; };
 		6E50899B2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseCell+TestHelpers.swift"; sourceTree = "<group>"; };
 		6E50899E2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewControllerTests.swift; sourceTree = "<group>"; };
 		6E5089A02B5FF05600847CDA /* ExerciseDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewTests.swift; sourceTree = "<group>"; };
@@ -383,6 +386,7 @@
 				6E4D83232B5A68AC00BB063D /* MockWebService.swift */,
 				6E2E618B2B5A9609005ADE1F /* TestFactory.swift */,
 				6E56A1412B5AAF270056B7FA /* MockExcerciseService.swift */,
+				6E4F82A82B619DB70016F6D9 /* XCTestCase+Helper.swift */,
 			);
 			path = "Test Helper";
 			sourceTree = "<group>";
@@ -857,6 +861,7 @@
 				6E50899F2B5FEEAA00847CDA /* ExerciseListViewControllerTests.swift in Sources */,
 				6E50899C2B5FECC700847CDA /* ExerciseCell+TestHelpers.swift in Sources */,
 				6E5089A32B5FF1D800847CDA /* MockExerciseDetailsViewModel.swift in Sources */,
+				6E4F82AA2B619E920016F6D9 /* XCTestCase+Helper.swift in Sources */,
 				6EE4F0732B5FC4F100EDBDA7 /* MockNavigator.swift in Sources */,
 				6E5089E32B601C7B00847CDA /* MockExerciseService.swift in Sources */,
 			);
@@ -882,6 +887,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F82A92B619DB70016F6D9 /* XCTestCase+Helper.swift in Sources */,
 				6E2E618C2B5A9609005ADE1F /* TestFactory.swift in Sources */,
 				6E4D83242B5A68AC00BB063D /* MockWebService.swift in Sources */,
 				6E4D83272B5A6C1400BB063D /* WebServiceSpec.swift in Sources */,
