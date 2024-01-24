@@ -57,7 +57,10 @@ public struct ExercisesDetails: Codable {
     }
     
     public var mainImage: ExerciseImage? {
-        return images?.first(where: {$0.isMain ?? false})
+        if let image = images?.first(where: {$0.isMain ?? false}) {
+            return image
+        }
+        return images?.first
     }
     
 }
@@ -68,26 +71,29 @@ public struct ExerciseImage: Codable, Hashable,Identifiable {
     
     public let id: Int?
     public let uuid: String?
-    public let exerciseBase: Int?
-    public let exerciseBaseUUID: String?
     public let image: String?
     public let isMain: Bool?
 
-    public init(id: Int?, uuid: String?, exerciseBase: Int?, exerciseBaseUUID: String?, image: String?, isMain: Bool?) {
+    public init(id: Int?, uuid: String?, image: String?, isMain: Bool?) {
         self.id = id
         self.uuid = uuid
-        self.exerciseBase = exerciseBase
-        self.exerciseBaseUUID = exerciseBaseUUID
         self.image = image
         self.isMain = isMain
     }
 
     enum CodingKeys: String, CodingKey {
         case id, uuid
-        case exerciseBase = "exercise_base"
-        case exerciseBaseUUID = "exercise_base_uuid"
         case image
         case isMain = "is_main"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let continer = try decoder.container(keyedBy: CodingKeys.self)
+        id = try continer.decodeIfPresent(Int.self, forKey: .id)
+        uuid = try continer.decodeIfPresent(String.self, forKey: .uuid)
+        image = try continer.decodeIfPresent(String.self, forKey: .image)
+        isMain = try continer.decodeIfPresent(Bool.self, forKey: .isMain)
+        
     }
 }
 

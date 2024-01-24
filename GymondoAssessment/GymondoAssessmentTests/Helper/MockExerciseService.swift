@@ -10,9 +10,9 @@ import Gymondo
 import Combine
 
 class MockExerciseService: ExerciseServiceType {
-    
+        
     var mockedResponse: AnyPublisher<ExercisesResponse, WebServiceRequestError>?
-    func fetchExercise() -> AnyPublisher<ExercisesResponse, WebServiceRequestError> {
+    func fetchExercise(limit: Int, offset: Int) -> AnyPublisher<ExercisesResponse, WebServiceRequestError> {
         if let mockedResponse = mockedResponse {
             return mockedResponse
                 .mapError { $0 as WebServiceRequestError }

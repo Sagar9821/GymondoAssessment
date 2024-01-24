@@ -11,6 +11,8 @@ import Gymondo
 public struct ExerciseDetailsView: View {
     
     @ObservedObject var viewModel: ExerciseDetailsViewModel
+    @State private var hasAppeared = false
+    
     var navigator: NavigatorType
     public init(viewModel: ExerciseDetailsViewModel, navigator: NavigatorType) {
         self.viewModel = viewModel
@@ -24,9 +26,14 @@ public struct ExerciseDetailsView: View {
             ScrollView {
                 ExerciseAsyncImagesView(exerciseImages: viewModel.exercises.images)
                 ExerciseVariationsView(viewModel: viewModel, navigator: navigator)
-            }.task {
-                viewModel.getExerciseVariations()
-            }.navigationTitle(viewModel.exercises.exercises?.first(where: {$0.language == .english}).unsafelyUnwrapped.name.unsafelyUnwrapped ?? "")
+            }
+            .onAppear(perform: {
+                if !hasAppeared {
+                    viewModel.getExerciseVariations()
+                    hasAppeared = true
+                }
+            })
+            .navigationTitle(viewModel.exercises.exercises?.first(where: {$0.language == .english}).unsafelyUnwrapped.name.unsafelyUnwrapped ?? "")
         }
     }
 }

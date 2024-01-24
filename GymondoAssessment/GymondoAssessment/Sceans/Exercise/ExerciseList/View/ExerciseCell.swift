@@ -31,11 +31,11 @@ public class ExerciseCell: UITableViewCell {
     func loadImage() {
         if let exercise = exercise,let url = exercise.mainImage?.image ,
             let url = URL(string: url){
-            self.imageViewExercise.sd_setImage(with: url,placeholderImage: UIImage(named: "placeholder")) { image, error, type, url in
+            self.imageViewExercise.sd_setImage(with: url,placeholderImage: UIImage(named: "placeholder")) { [weak self] image, error, type, url in
                 if type == .none {
-                    self.imageViewExercise.alpha = 0
+                    self?.imageViewExercise.alpha = 0
                     UIView.animate(withDuration: 2.0) {
-                        self.imageViewExercise.alpha = 1.0
+                        self?.imageViewExercise.alpha = 1.0
                     }
                 }
             }

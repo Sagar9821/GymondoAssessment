@@ -26,15 +26,17 @@ class ExerciseDetailsScreenUITests: XCTestCase {
         app = nil
     }
     
-    func test_exerciseList_successful() {
+    func test_exercise_details_loaded_successful() {
         
         let table = app.tables["exerciseTableView"]
         
-        let predicate = NSPredicate(format: "identifier CONTAINS 'item_'")
-        
         XCTAssertTrue(table.waitForExistence(timeout: 3), "The exercise table should be visible")
-        XCTAssertTrue(table.staticTexts["Bulgarian split squats left"].exists)
-        table.staticTexts["Bulgarian split squats left"]
-                
+        let exercise = table.staticTexts["Bulgarian split squats left"]
+        XCTAssertTrue(exercise.exists)
+        exercise.tap()
+        
+        XCTAssertTrue(app.staticTexts["Bulgarian split squats left"].exists)
+        XCTAssertTrue(app.staticTexts["Variations"].exists)        
+        XCTAssertTrue(app.staticTexts["Barbell Reverse Wrist Curl"].exists)
     }
 }

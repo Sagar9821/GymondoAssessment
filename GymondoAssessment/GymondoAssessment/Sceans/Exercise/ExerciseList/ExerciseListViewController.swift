@@ -50,7 +50,9 @@ public class ExerciseListViewController: UIViewController {
                 self?.activityLoader.startAnimating()
             case .failure(let message):
                 self?.activityLoader.stopAnimating()
-                self?.showAlert(title: "Error", message: message)
+                self?.showAlert(title: "Error", message: message, retry: { [weak self] _ in
+                    self?.viewModel.fetchExercise(refreshing: false)
+                })
             case .none,.success:
                 self?.activityLoader.stopAnimating()
             }
@@ -78,15 +80,21 @@ public class ExerciseListViewController: UIViewController {
     }
     
     private func setupExerciseTableView() {
+        tableViewExercises.accessibilityIdentifier = "exerciseTableView"
         tableViewExercises.dataSource = self
         tableViewExercises.delegate = self
         let refreshController = UIRefreshControl()
         tableViewExercises.refreshControl = refreshController
         refreshController.addTarget(self, action: #selector(refreshExerciseList), for: .valueChanged)
-        viewModel.refreshing.sink { _ in
-            
-        } receiveValue: { value in
-            value == true ? self.tableViewExercises.refreshControl?.beginRefreshing() : self.tableViewExercises.refreshControl?.endRefreshing()
+        viewModel.refreshing.sink { error in
+            switch error {
+            case .finished:
+                break;
+            case .failure(let message):
+                self.showAlert(title: "Error", message: message.localizedDescription,retry: nil) 
+            }
+        } receiveValue: { [weak self] value in
+            value == true ? self?.tableViewExercises.refreshControl?.beginRefreshing() : self?.tableViewExercises.refreshControl?.endRefreshing()
         }.store(in: &cancellable)
 
     }

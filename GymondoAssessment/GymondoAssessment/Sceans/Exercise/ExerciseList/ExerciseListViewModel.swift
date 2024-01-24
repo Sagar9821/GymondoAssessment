@@ -44,22 +44,21 @@ class ExerciseListViewModel: ExerciseListViewModelType {
     
     func fetchExercise(refreshing: Bool = false) {
         if refreshing { self._refreshing = true } else { _viewState = .loading }
-        
-        excerciseServices.fetchExercise().sink { [weak self] completion in
-            if refreshing { self?._refreshing = true }
+        excerciseServices.fetchExercise(limit: 40, offset: 0).sink { [weak self] completion in
             switch completion {
             case .finished:
+                self?._refreshing = false
                 break
             case let .failure(error):
-                self?._viewState = .failure(message: error.localizedDescription)
+                self?._refreshing = false
+                self?._viewState = .failure(message: error.message)
             }
         } receiveValue: { [weak self] excerciseResponse in
-            if refreshing { self?._refreshing = false } else { self?._viewState = .none }
+            self?._viewState = .none
+            self?._refreshing = false
             self?._arrayExercise.append(contentsOf: excerciseResponse.results ?? [])
             self?.exercisesSubject.send(excerciseResponse.results ?? [])
-       
-            
-        }.store(in: &cancellable)
+         }.store(in: &cancellable)
 
     }
 }

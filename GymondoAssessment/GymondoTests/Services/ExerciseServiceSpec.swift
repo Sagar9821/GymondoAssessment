@@ -18,7 +18,7 @@ final class ExerciseServiceSpec: XCTestCase {
 
         let exp = expectation(description: "Wait for completion")
 
-        _ = apiService.fetchExercise()
+        _ = apiService.fetchExercise(limit: 20, offset: 0)
             .sink { completion in
                 switch completion {
                 case .finished:

@@ -25,13 +25,22 @@ final class ExerciseListSuccessTests: XCTestCase {
         app = nil
     }
     
-    func test_exerciseList_successful() {
+    func test_exercise_table_loaded_successful() {
         
         let table = app.tables["exerciseTableView"]
         XCTAssertTrue(table.waitForExistence(timeout: 3), "The exercise table should be visible")
         XCTAssertTrue(table.staticTexts["Bulgarian split squats left"].exists)
         XCTAssertEqual(table.cells.count, 10, "There should be 10 items on the screen")
-
                 
+    }
+    
+    func test_exercise_table_exerciseImages_loading() {
+        
+        let table = app.tables["exerciseTableView"].firstMatch
+        XCTAssertTrue(table.waitForExistence(timeout: 3), "The exercise table should be visible")
+        XCTAssertTrue(table.staticTexts["Bulgarian split squats left"].exists)
+        XCTAssertEqual(table.cells.count, 10, "There should be 10 items on the screen")
+        table.swipeUp()
+        sleep(2)
     }
 }
