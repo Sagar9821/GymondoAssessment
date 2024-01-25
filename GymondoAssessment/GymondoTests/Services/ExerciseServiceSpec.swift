@@ -33,6 +33,25 @@ final class ExerciseServiceSpec: XCTestCase {
         wait(for: [exp], timeout: 10.0)
     }
     
+    func test_endToEndTestServerGETExercisesVariationDetails_matchesAPIData() {
+        let apiService: ExerciseService = ExerciseService()
+
+        let exp = expectation(description: "Wait for completion")
+
+        _ = apiService.fetchExerciseDetails(exerciseId: 48)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    exp.fulfill()
+
+                case let .failure(error):
+                    XCTFail("Expected successful data result, got \(error) instead")
+                }
+        } receiveValue: { exerciseResponse in
+            XCTAssertTrue((exerciseResponse.id == 48))
+        }
+        wait(for: [exp], timeout: 10.0)
+    }
   
     // MARK: - Helpers
 

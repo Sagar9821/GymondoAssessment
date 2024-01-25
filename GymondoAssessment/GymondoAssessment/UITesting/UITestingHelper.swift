@@ -22,6 +22,9 @@ struct UITestingHelper {
         ProcessInfo.processInfo.environment["-variation-networking-success"] == "1"
     }
     
+    static var isExerciseNetworkSuccessfulWithEmptyData: Bool {
+        ProcessInfo.processInfo.environment["-exercise-networking-success-emptyData"] == "1"
+    }
 }
 
 #endif

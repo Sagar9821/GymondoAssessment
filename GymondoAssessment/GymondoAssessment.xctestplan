@@ -26,6 +26,13 @@
         "identifier" : "6E4D82DC2B5A5E8600BB063D",
         "name" : "GymondoAssessmentTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:GymondoAssessment.xcodeproj",
+        "identifier" : "6EC3EB4C2B61142600411F2F",
+        "name" : "GymondoAssessmentUITests"
+      }
     }
   ],
   "version" : 1
