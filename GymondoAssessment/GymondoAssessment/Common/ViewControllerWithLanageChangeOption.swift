@@ -18,7 +18,7 @@ public class ViewControllerWithLanageChangeOption: UIViewController {
     }
     
     private func setupLangegeChangeOption() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Eng", style: .plain, target: self, action: #selector(showLanguageOptions))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: LanguageManager.default.language.displayName, style: .plain, target: self, action: #selector(showLanguageOptions))
     }
     
     @objc func showLanguageOptions() {

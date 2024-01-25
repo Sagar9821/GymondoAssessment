@@ -32,4 +32,6 @@ final class ExerciseScreenFailureUITest: XCTestCase {
         XCTAssertTrue(alert.buttons["Retry"].exists)
                 
     }
+    
+    
 }

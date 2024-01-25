@@ -13,12 +13,20 @@ class MockExerciseService: ExerciseServiceType {
         
     func fetchExercise(limit: Int, offset: Int) -> AnyPublisher<ExercisesResponse, WebServiceRequestError> {
         
-        if let response = try? StaticJSONMapper.decode(file: "ExercisebaseinfoStaticData", type: ExercisesResponse.self), 
-            UITestingHelper.isExerciseNetworkSuccessful {
-            return Just( response )
-                .setFailureType(to: WebServiceRequestError.self)
-                .eraseToAnyPublisher()
-                .eraseToAnyPublisher()
+        if var response = try? StaticJSONMapper.decode(file: "ExercisebaseinfoStaticData", type: ExercisesResponse.self) {
+            if UITestingHelper.isExerciseNetworkSuccessful {
+                return Just( response )
+                    .setFailureType(to: WebServiceRequestError.self)
+                    .eraseToAnyPublisher()
+                    .eraseToAnyPublisher()
+            } else if UITestingHelper.isExerciseNetworkSuccessfulWithEmptyData {
+                
+                return Just( ExercisesResponse(results: []) )
+                    .setFailureType(to: WebServiceRequestError.self)
+                    .eraseToAnyPublisher()
+                    .eraseToAnyPublisher()
+            }
+            
         }
         
         let errorPublisher = Fail<ExercisesResponse, WebServiceRequestError>(error: .notFound(error: WebResponseError(detail: "Not found.")))
