@@ -33,7 +33,7 @@ public struct ExerciseDetailsView: View {
                     hasAppeared = true
                 }
             })
-            .navigationTitle(viewModel.exercises.exercises?.first(where: {$0.language == .english}).unsafelyUnwrapped.name.unsafelyUnwrapped ?? "")
+            .navigationTitle(viewModel.exercises.exercises?.first(where: {$0.language == LanguageManager.default.language}).unsafelyUnwrapped.name.unsafelyUnwrapped ?? "")
         }
     }
 }

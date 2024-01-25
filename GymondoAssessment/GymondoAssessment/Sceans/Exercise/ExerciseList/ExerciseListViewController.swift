@@ -7,11 +7,13 @@
 
 import UIKit
 import Combine
+import Gymondo
 
-public class ExerciseListViewController: UIViewController {
+public class ExerciseListViewController: ViewControllerWithLanageChangeOption {
 
     @IBOutlet public weak var activityLoader: UIActivityIndicatorView!
     @IBOutlet public weak var tableViewExercises: UITableView!
+    @IBOutlet public weak var labelExercisePlaceholder: UILabel!
     
     private var cancellable:Set<AnyCancellable> = Set<AnyCancellable>()
     
@@ -64,7 +66,7 @@ public class ExerciseListViewController: UIViewController {
                         .store(in: &cancellable)
         
         
-        viewModel.exercisesSubject.sink { [weak self] completion in
+        viewModel.exercisesSubject.sink {  completion in
             switch completion {
             case .finished:
                 print("complete")
@@ -72,7 +74,8 @@ public class ExerciseListViewController: UIViewController {
                 print(error.localizedDescription)
             }
         } receiveValue: { [weak self] exercise in
-            self?.tableViewExercises.reloadData()
+            self?.labelExercisePlaceholder.isHidden = !exercise.isEmpty
+            self?.tableViewExercises.reloadWithAnimation()
             
         }.store(in: &cancellable)
         
@@ -83,17 +86,11 @@ public class ExerciseListViewController: UIViewController {
         tableViewExercises.accessibilityIdentifier = "exerciseTableView"
         tableViewExercises.dataSource = self
         tableViewExercises.delegate = self
+        labelExercisePlaceholder.isHidden = true
         let refreshController = UIRefreshControl()
         tableViewExercises.refreshControl = refreshController
         refreshController.addTarget(self, action: #selector(refreshExerciseList), for: .valueChanged)
-        viewModel.refreshing.sink { [weak self]  error in
-            switch error {
-            case .finished:
-                break;
-            case .failure(let message):
-                self?.showAlert(title: "Error", message: message.localizedDescription,retry: nil) 
-            }
-        } receiveValue: { [weak self] value in
+        viewModel.refreshing.sink { _ in } receiveValue: { [weak self] value in
             value == true ? self?.tableViewExercises.refreshControl?.beginRefreshing() : self?.tableViewExercises.refreshControl?.endRefreshing()
         }.store(in: &cancellable)
 
@@ -101,6 +98,10 @@ public class ExerciseListViewController: UIViewController {
     
     @objc func refreshExerciseList() {
         viewModel.fetchExercise(refreshing: true)
+    }
+    
+    public override func didUserChangedLanaguage(lanaguage: Exercise.Language) {
+        viewModel.changeLanaguage(lanaguage: lanaguage)
     }
 }
 // MARK: - TableView DataSource
@@ -122,7 +123,9 @@ extension ExerciseListViewController: UITableViewDelegate {
         }
     }
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let exercise = viewModel.arrayExercise[indexPath.row]
-        navigator.navigate(to: .exerciseDetails(exercise))
+        if let details = viewModel.getExerciseDetails(exercise: viewModel.arrayExercise[indexPath.row]) {
+            navigator.navigate(to: .exerciseDetails(details))
+        }
     }
 }
+
