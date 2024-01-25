@@ -71,6 +71,9 @@
 		6EE4F06D2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */; };
 		6EE4F0702B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */; };
 		6EE4F0732B5FC4F100EDBDA7 /* MockNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4F0722B5FC4F100EDBDA7 /* MockNavigator.swift */; };
+		6EEE52362B62636F00137490 /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE52352B62636F00137490 /* ExerciseCellViewModel.swift */; };
+		6EEE52382B626CFC00137490 /* ViewControllerWithLanageChangeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE52372B626CFC00137490 /* ViewControllerWithLanageChangeOption.swift */; };
+		6EEE52402B62838F00137490 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE523F2B62838F00137490 /* LanguageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +227,9 @@
 		6EE4F06C2B5FC0B300EDBDA7 /* ExerciseListViewController+TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseListViewController+TestHelper.swift"; sourceTree = "<group>"; };
 		6EE4F06F2B5FC3BF00EDBDA7 /* MockExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExerciseListViewModel.swift; sourceTree = "<group>"; };
 		6EE4F0722B5FC4F100EDBDA7 /* MockNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigator.swift; sourceTree = "<group>"; };
+		6EEE52352B62636F00137490 /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
+		6EEE52372B626CFC00137490 /* ViewControllerWithLanageChangeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithLanageChangeOption.swift; sourceTree = "<group>"; };
+		6EEE523F2B62838F00137490 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +428,8 @@
 		6E50CC222B5F9C3E0031187D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6EEE523F2B62838F00137490 /* LanguageManager.swift */,
+				6EEE52372B626CFC00137490 /* ViewControllerWithLanageChangeOption.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -501,6 +509,7 @@
 			children = (
 				6E56A15A2B5AC9000056B7FA /* ExerciseCell.swift */,
 				6E56A15B2B5AC9000056B7FA /* ExerciseCell.xib */,
+				6EEE52352B62636F00137490 /* ExerciseCellViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -831,10 +840,13 @@
 				6E9A86802B5BAA31004A71F2 /* UITableView+Extentions.swift in Sources */,
 				6E50CC192B5E50AC0031187D /* ExerciseAsyncImagesView.swift in Sources */,
 				6E56A1522B5AC1A20056B7FA /* GymondoStoryboard.swift in Sources */,
+				6EEE52362B62636F00137490 /* ExerciseCellViewModel.swift in Sources */,
 				6ECE0AA32B5D7F450010576D /* ExerciseDetailsViewModel.swift in Sources */,
 				6EC3EB682B611CDD00411F2F /* StaticJSONMapper.swift in Sources */,
 				6EC3EB5D2B61187800411F2F /* UITestingHelper.swift in Sources */,
 				6E9A867E2B5B9781004A71F2 /* ViewState.swift in Sources */,
+				6EEE52382B626CFC00137490 /* ViewControllerWithLanageChangeOption.swift in Sources */,
+				6EEE52402B62838F00137490 /* LanguageManager.swift in Sources */,
 				6E56A15C2B5AC9000056B7FA /* ExerciseCell.swift in Sources */,
 				6E50CC1D2B5E575F0031187D /* VariationsExerciseRow.swift in Sources */,
 				6E56A1472B5AB9300056B7FA /* Navigator.swift in Sources */,

@@ -47,8 +47,13 @@ public class ExerciseDetailsViewModel: ObservableObject, ExerciseDetailsViewMode
                 case .failure(let error):
                     self.variationsDetail = .error(error.message)
                 }
-            } receiveValue: { exercise in
-                self.variationsDetail = .variations(exercise)
+            } receiveValue: { exercise in                
+                let currentLanaguage = LanguageManager.default.language
+                if let _ = exercise.exercises?.first(where: {$0.language == currentLanaguage}) {
+                    self.variationsDetail = .variations(exercise)
+                } else {
+                    self.variationsDetail = .error("Exercise details not available for \(currentLanaguage.displayName) please choose diffrent lanaguage.")
+                }
             }.store(in: &cancellable)
         } else {
             variationsDetail = .error("No variations")

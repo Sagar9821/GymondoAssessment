@@ -11,15 +11,18 @@ import Gymondo
 
 class MockExerciseListViewModel: ExerciseListViewModelType {
     
+    func changeLanaguage(lanaguage: Exercise.Language) {
+        
+    }
     
     
-    var exercisesSubject: PassthroughSubject<[ExercisesDetails], Error> =  PassthroughSubject<[ExercisesDetails], Error>()
+    var exercisesSubject: PassthroughSubject<[ExerciseCellViewModel], Error> =  PassthroughSubject<[ExerciseCellViewModel], Error>()
     
     @Published var _viewState: ViewState = .none
     var viewState: Published<ViewState>.Publisher { $_viewState }
     
-    var _arrayExercise: [ExercisesDetails] = []
-    var arrayExercise: [ExercisesDetails]  {
+    var _arrayExercise: [ExerciseCellViewModel] = []
+    var arrayExercise: [ExerciseCellViewModel]  {
         return _arrayExercise
     }
     
@@ -31,8 +34,21 @@ class MockExerciseListViewModel: ExerciseListViewModelType {
         apiCallCountForFetchExercise += 1
     }
     
-    func completeLoadingExercise(exercise: [ExercisesDetails]) {
-        _arrayExercise.append(contentsOf: exercise)
-        exercisesSubject.send(exercise)
+    var allExercise: [ExercisesDetails] = []
+    func completeLoadingExercise(exercise: [ExercisesDetails],for langauge: Exercise.Language) {
+        var filteredExercise: [ExerciseCellViewModel] = [ExerciseCellViewModel]()
+        exercise.forEach({ details in
+            if let exerice = details.exercises?.first(where: {$0.language == langauge}) {
+                allExercise.append(details)
+                filteredExercise.append(ExerciseCellViewModel(id: details.id!, exercise: exerice, image: details.mainImage, variations: details.variations, exerciseImages: details.images))
+            }
+        })
+        _arrayExercise.append(contentsOf: filteredExercise)
+        exercisesSubject.send(filteredExercise)
     }
+    
+    func getExerciseDetails(exercise: ExerciseCellViewModel) -> Gymondo.ExercisesDetails? {
+        allExercise.first(where: {$0.id == exercise.id ?? 0})
+    }
+    
 }

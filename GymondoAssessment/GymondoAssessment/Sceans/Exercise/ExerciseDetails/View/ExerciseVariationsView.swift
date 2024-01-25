@@ -28,8 +28,8 @@ struct ExerciseVariationsView: View {
                     .font(Font.system(size: 14,weight: .light))
                     .frame(maxWidth: .infinity,alignment: .leading)
             case .variations(let exercise):
-                if let exerciseDetails = exercise.exercises?.first(where: {$0.language == .english}) {
-                    VariationsExerciseRow(exercise: exercise)
+                if let exerciseDetails = exercise.exercises?.first(where: {$0.language == LanguageManager.default.language}) {
+                    VariationsExerciseRow(exercise: exerciseDetails,exerciseImage: exercise.mainImage)
                         .background(Color.white).onTapGesture {
                             navigator.navigate(to: .exerciseDetails(exercise))
                         }

@@ -54,7 +54,6 @@ class Navigator: NavigatorType {
             } else {
                 exerciseService = ExerciseService()
             }
-            let viewModel = ExerciseListViewModel(excerciseServices: exerciseService)
             let exerciseDetailsViewModel = ExerciseDetailsViewModel(exercises: exercise,exerciseService: exerciseService)
             let exerciseDetailsView = ExerciseDetailsView(viewModel: exerciseDetailsViewModel, navigator: self)
             let hostingVc = UIHostingController(rootView: exerciseDetailsView)

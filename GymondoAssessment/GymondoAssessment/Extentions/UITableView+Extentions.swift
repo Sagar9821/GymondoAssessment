@@ -17,4 +17,18 @@ extension UITableView {
         register(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
         return getCell(type)
     }
+    
+    func reloadWithAnimation() {
+        self.reloadData()
+        var delayCounter = 0
+        let tableViewSize = bounds.size
+        let cells = visibleCells
+        for cell in cells {
+            cell.alpha = 0
+            UIView.animate(withDuration: 0.1, delay: 0.05*Double(delayCounter),animations: {
+                cell.alpha = 1
+            })
+            delayCounter += 1
+        }
+    }
 }
